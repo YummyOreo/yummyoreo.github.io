@@ -40,3 +40,15 @@ body {
 .button-color:hover {
     filter: brightness(125%);
 }
+
+.tech-tag {
+  padding-right: 5px;
+}
+
+.button-color-discord {
+  background-color: #7289da;
+}
+
+.button-color-discord:hover {
+    filter: brightness(125%);
+}
