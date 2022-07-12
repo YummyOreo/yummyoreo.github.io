@@ -11,7 +11,16 @@ body {
     var(--main-bg-color-1),
     var(--main-bg-color-2)
   );
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: repeat-y;
   color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .center {
