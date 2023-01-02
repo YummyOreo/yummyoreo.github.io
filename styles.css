@@ -42,3 +42,11 @@ button:hover {
 h1,h2 {
     color: #f9f5d7;
 }
+
+a {
+    color: #458588;
+}
+
+a:hover {
+    color: #83a598;
+}
