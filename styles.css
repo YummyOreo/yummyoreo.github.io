@@ -44,7 +44,7 @@ h1,h2 {
 }
 
 a {
-    color: #458588;
+    color: #458588 !important;
 }
 
 a:hover {
