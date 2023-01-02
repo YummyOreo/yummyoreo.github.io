@@ -1,30 +1,27 @@
-:root {
-  --main-color: #121212;
-  --main-bg-color-1: #3700b3;
-  --main-bg-color-2: #6a00ff;
-  --accent-color: #e7d3ff;
+@font-face {
+  font-family: 'terminus';
+  font-weight: bold;
+  font-style: italic;
+  src: url('./Terminess (TTF) Nerd Font Complete Mono Windows Compatible.ttf');
 }
 
 body {
-  background-image: linear-gradient(
-    90deg,
-    var(--main-bg-color-1),
-    var(--main-bg-color-2)
-  );
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: repeat-y;
-  color: white;
+    color: #ebdbb2;
+    background: #282828;
+    padding: 0 15%;
+    font-family: terminus;
 }
 
 body::-webkit-scrollbar {
-  display: none;
+    display: none;
+}
+
+em {
+    color: #d65d0e;
 }
 
 .center {
-  text-align: center;
+    text-align: center;
 }
 
 .center-Items {
@@ -32,20 +29,16 @@ body::-webkit-scrollbar {
     justify-content: center;
 }
 
-.divider {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 5px;
-    background: var(--accent-color);
-    border-color: var(--accent-color);
-    border-radius: 50px;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+button {
+    background: #fe8019 !important;
+    padding: 0.5rem 1rem !important;
+    color: #fabd2f !important;
 }
 
-.button-color {
-    background-color: var(--main-bg-color-2);
+button:hover {
+    filter: brightness(85%) !important;
 }
-.button-color:hover {
-    filter: brightness(125%);
+
+h1,h2 {
+    color: #f9f5d7;
 }
