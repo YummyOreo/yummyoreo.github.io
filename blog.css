@@ -1,16 +1,22 @@
 #desc {
     color: #a89983;
-    width: 40rem
+    width: 40rem;
+    max-width: 100%;
 }
 
 @media (max-width: 800px) {
     #desc {
         padding: 0 0 !important;
     }
-}
 
-.left {
-    padding-left: 25rem;
+    .inner {
+        display: block !important;
+    }
+
+    .sidebar {
+        display: none;
+        position: absolute;
+    }
 }
 
 .containter {
@@ -37,6 +43,10 @@
 
 .content {
     grid-area: content;
+}
+
+.content p {
+    width: 100%;
 }
 
 /* .line { */
