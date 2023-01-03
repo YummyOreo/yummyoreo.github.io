@@ -14,30 +14,36 @@ function load_blogs() {
         iframe.onload = (_) => {
             let blog_html = document.getElementById(blog).contentDocument;
             console.log(blog_html)
-            var text = blog_html.getElementById("desc").textContent;
+            var text = blog_html.getElementById("intro").textContent;
             iframe.remove()
 
             let li = document.createElement('li');
             li.classList.add("blog")
 
-            let a = document.createElement("a");
-            a.setAttribute("href", iframe.src);
-            li.appendChild(a);
 
             let title = document.createElement('h2');
             title.textContent = blog;
-            title.classList.add("text-4xl", "pt-4", "font-bold", "title")
-            a.appendChild(title);
+            title.classList.add("text-4xl", "font-bold", "title")
+            li.appendChild(title);
 
             let date = document.createElement("span");
             date.textContent = blog_html.getElementById("date").textContent;
             date.classList.add("text-1xl", "font-bold")
-            a.appendChild(date);
+            li.appendChild(date);
 
             let p = document.createElement('p');
-            p.textContent = text.split(" ").slice(0, 20).join(" ");
+            p.textContent = text.split(" ").slice(0, 100).join(" ");
             p.classList.add("text-1xl", "description")
-            a.appendChild(p);
+            li.appendChild(p);
+
+            let a = document.createElement("a");
+            a.setAttribute("href", iframe.src);
+            li.appendChild(a);
+
+            let button = document.createElement("button")
+            button.textContent = "Read more"
+            button.classList.add("mt-3")
+            a.appendChild(button)
 
             blogs_list.appendChild(li);
 

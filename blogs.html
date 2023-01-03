@@ -31,11 +31,13 @@
     <style>
         .description {
             color: #a89983;
-            padding: 0 35%;
+            width: 50rem;
         }
+
         @media (max-width: 800px) {
             .description {
-                padding: 0 0 !important;
+                width: 90%;
+                height: 10rem;
             }
         }
 
@@ -43,12 +45,14 @@
             color: #928374;
         }
 
-        li {
-            max-width: fit-content;
+        ul {
+            text-align: left;
         }
 
-        li:hover .title {
-            color: #83a598 !important;
+        li {
+            max-width: fit-content;
+            background: #1d2021;
+            padding: 1.5rem 1.5rem;
         }
 
         li a {
