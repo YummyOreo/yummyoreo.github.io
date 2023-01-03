@@ -21,19 +21,34 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/assets/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+     <script src="./js/blogs.js" defer></script>
 </head>
 
 <body>
+    <style>
+        .description {
+            color: #a89983;
+            padding: 0 35%;
+        }
+        @media (max-width: 800px) {
+            .description {
+                padding: 0 0 !important;
+            }
+        }
+    </style>
     <nav class="nav">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
         <a href="tech.html">Tech</a>
-        <a class="active">Tech</a>
+        <a class="active">Blogs</a>
     </nav>
     <div class="center">
         <h1 class="text-6xl pt-28 font-bold">Blog Posts</h1>
         <br>
-        <p class="text-2xl">Coming soon...</p>
+        <ul id="blogs">
+        </ul>
+        <p class="text-2xl" style="color: #928373;" id="loading">Loading blog posts...</p>
+        <div class="pb-28"></div>
     </div>
 </body>
 
