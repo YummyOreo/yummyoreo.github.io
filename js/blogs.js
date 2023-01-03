@@ -10,7 +10,7 @@ function load_blogs() {
         iframe.style.display = 'none';
         document.body.appendChild(iframe);
         iframe.src = './blogs/' + blog + ".html";
-        setTimeout(function() {
+        iframe.onload = (ev) => {
             var text = document.getElementsByTagName('iframe')[0].contentDocument.getElementById("desc").textContent;
             iframe.remove()
 
@@ -37,7 +37,7 @@ function load_blogs() {
             if (done_items == blogs.length) {
                 document.getElementById("loading").remove()
             }
-        }, 500);
+        }
     })
 }
 
