@@ -1,4 +1,4 @@
-let blogs = ["test"]
+import { blogs } from "./blogs.js";
 
 function load_blogs() {
     let blogs_list = document.getElementById("blogs");
@@ -6,11 +6,26 @@ function load_blogs() {
     let done_items = 0;
 
     blogs.forEach((blog, _) => {
+        let path = window.location.pathname;
+        const page = path.split("/").pop().replace(".html", "");
+        if (blog == page) {
+            done_items += 1;
+            if (done_items == blogs.length) {
+
+                if (blogs_list.children.length == 0) {
+                    document.getElementById("loading").textContent = "No other blogs!"
+                } else {
+                    document.getElementById("loading").remove()
+                }
+            }
+            return;
+        }
+
         let iframe = document.createElement('iframe');
         iframe.id = blog;
         iframe.style.display = 'none';
         document.body.appendChild(iframe);
-        iframe.src = './blogs/' + blog + ".html";
+        iframe.src = './' + blog + ".html";
         iframe.onload = (_) => {
             let blog_html = document.getElementById(blog).contentDocument;
             console.log(blog_html)
@@ -26,7 +41,7 @@ function load_blogs() {
 
             let title = document.createElement('h2');
             title.textContent = blog;
-            title.classList.add("text-4xl", "pt-4", "font-bold", "title")
+            title.classList.add("text-4xl","font-bold", "title")
             a.appendChild(title);
 
             let date = document.createElement("span");
@@ -34,8 +49,9 @@ function load_blogs() {
             date.classList.add("text-1xl", "font-bold")
             a.appendChild(date);
 
-            let p = document.createElement('p');
-            p.textContent = text.split(" ").slice(0, 20).join(" ");
+
+            let p = document.createElement('h2');
+            p.textContent = text.split(" ").slice(0, 10).join(" ");
             p.classList.add("text-1xl", "description")
             a.appendChild(p);
 
@@ -49,4 +65,4 @@ function load_blogs() {
     })
 }
 
-export { blogs, load_blogs };
+load_blogs()
