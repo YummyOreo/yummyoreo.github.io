@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'terminus';
   font-weight: bold;
-  font-style: italic;
+  /* font-style: italic; */
   src: url('./Terminess (TTF) Nerd Font Complete Mono Windows Compatible.ttf');
 }
 
