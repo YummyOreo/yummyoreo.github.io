@@ -56,8 +56,8 @@ a:hover {
     height: 4rem;
     background: #1d2021;
     padding: 0 2rem;
-    /* overflow: hidden; */
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width: 800px) {
