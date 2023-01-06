@@ -12,8 +12,9 @@ var files = fs.readdirSync('../blogs/');
 
 function make_file() {
     let xml = feed.xml({indent: true})
+    xml = xml.replace("<?xml version=\"1.0\" encoding=\"UTF-8\"?>", "");
 
-    fs.writeFile("..\\rss", xml, (err) => {console.log(err)})
+    fs.writeFile("..\\rss.xml", xml, (err) => {console.log(err)})
 }
 
 let done_items = 0;
