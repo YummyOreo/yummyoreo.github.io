@@ -22,7 +22,7 @@ function load_blogs() {
 
 
             let title = document.createElement('h2');
-            title.textContent = blog;
+            title.textContent = blog_html.getElementById("blog-title").textContent;
             title.classList.add("text-4xl", "font-bold", "title")
             li.appendChild(title);
 
