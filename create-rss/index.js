@@ -18,6 +18,9 @@ function make_file() {
 }
 
 let done_items = 0;
+if (files.length == 0) {
+    make_file();
+}
 files.forEach((file, index) => {
     fs.readFile("../blogs/" + file, "utf8", (_, data) => {
         const root = parse(data);

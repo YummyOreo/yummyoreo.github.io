@@ -1,4 +1,4 @@
-let blogs = ["test"]
+let blogs = []
 
 function load_blogs() {
     let blogs_list = document.getElementById("blogs");
