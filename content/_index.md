@@ -5,4 +5,4 @@ draft: false
 framed: true
 ---
 
-Hello, I am a highschool student, developer, mini painter, and ultimate frisbee player. I currently am learing `Rust`!
+Hello, I am a highschool student, developer, mini painter, and ultimate frisbee player. I currently am learing `Rust` and embedded programming!
