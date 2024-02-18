@@ -22,11 +22,11 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
   function ContentMetadata({ cfg, fileData, displayClass }: QuartzComponentProps) {
     const text = fileData.text
 
-    if (text) {
+    if (text && !(fileData.relativePath == "_index.md")) {
       const segments: string[] = []
 
       if (fileData.dates) {
-        segments.push(formatDate(getDate(cfg, fileData)!, cfg.locale))
+        segments.push("Last updated " + formatDate(getDate(cfg, fileData)!, cfg.locale))
       }
 
       // Display reading time if enabled
