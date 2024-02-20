@@ -1,3 +1,9 @@
+---
+title: P4A 2024 Memes
+---
+
+Some random memes that I made during P4(Q)A!
+
 ## TB Memes
 
 ![[meme1.png]]
