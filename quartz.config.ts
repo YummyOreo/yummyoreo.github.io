@@ -35,8 +35,8 @@ const config: QuartzConfig = {
           light: "#24273a",
           lightgray: "#1e2030",
           gray: "#575a6d",
-          darkgray: "#8085a1",
-          dark: "#c5cff5",
+          darkgray: "#bbc5ea",
+          dark: "#bbc5ea",
           secondary: "#e69f79",
           tertiary: "#a17563",
           highlight: "rgba(230, 159, 121, 0.15)",
@@ -50,7 +50,7 @@ const config: QuartzConfig = {
       Plugin.CreatedModifiedDate({
         // you can add 'git' here for last modified from Git
         // if you do rely on git for dates, ensure defaultDateType is 'modified'
-        priority: ["frontmatter", "git"],
+        priority: ["frontmatter", "filesystem"],
       }),
       Plugin.Latex({ renderEngine: "katex" }),
       Plugin.SyntaxHighlighting({
