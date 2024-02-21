@@ -23,3 +23,5 @@ Some random memes that I made during P4(Q)A!
 ## Other
 
 ![[meme5.png]]
+
+![[meme9.png]]
