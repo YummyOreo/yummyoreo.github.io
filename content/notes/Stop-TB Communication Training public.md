@@ -83,3 +83,7 @@ On the capital hill day, the people that went there did a lot of the education, 
 ### What to do if I Have a Restriction
 They provided a nice diagram for this issue:
 ![[Stop-TB Communication Training Slide 1.png]]
+
+---
+
+> Credit goes to Stop-TB USA for the great zoom that they had.
