@@ -83,7 +83,6 @@ I (YummyOreo) am currently working on a "proxy" api, so that every signup has to
 ## Reflection
 Here are a few things that we could do better:
 - Communicate the problem, the options and the decisions during the process.
-- Speed up the merge time during a incident to stop it as quickly as possible.
 
 [^1]: https://discord.com/channels/252701351786577920/1146483253725888542/1236842881746993233
 [^2]: https://discord.com/channels/252701351786577920/1146483253725888542/1236844806869749760
