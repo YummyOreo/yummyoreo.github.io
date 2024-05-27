@@ -50,10 +50,11 @@ We believe that these signups (where name matches email) are spam because of the
 ### Chosen Option
 The chosen solution/response was to have a client-side check to see if the name matches the email. If it does, the signup would not go through and it will display an error message.[^7]
 #### Effectiveness
-This did, at least, temporarily halt the suspicious signups.[^9] And it was quick and easy to make.
+This solution had halted the spam signups.[^9] It was quick and easy to make.
 
 #### Weaknesses
 This solution could be circumvented by just going to Gaggle directly.
+> As of now, there is no evidence that this has been done!
 
 ## Future Response
 - We are currently working on a "proxy" api, so that every signup has to comply with our standards, not Gaggle's (see [here](https://github.com/TBfighters/newsletter-signup)). This solution would go into effect if the spam returns.
