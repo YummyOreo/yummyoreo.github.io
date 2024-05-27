@@ -20,7 +20,7 @@ Nolram notifies TBFighters in the `tb-channel-new-people-go-here` channel in the
 ### May 8th, 2024 (2024-05-08)
 Dan informs TBFighters in the `web-dev` thread of the `tb-channel-new-people-go-here` channel in the Nerfighteria discord of the potential of spam signups.[^3][^4]
 
-Later that day, we decide that they are indeed spam.[^5] Brainstorming on what to do begins.
+Later that day, we decide that they are indeed spam (see more [[TBFighters Website and Newsletter Incident 01#Rational|here]]).[^5] Brainstorming on what to do begins.
 
 ### May 10th, 2024 (2024-05-10)
 We decide to send a email to Gaggle about the incident asking what they could do about the spam.[^6]
@@ -56,7 +56,8 @@ This did, at least, temporarily halt the suspicious signups.[^9] And it was quic
 This solution could be circumvented by just going to Gaggle directly.
 
 ## Future Response
-I (YummyOreo) am currently working on a "proxy" api, so that every signup has to comply with our standards, not Gaggle's (see [here](https://github.com/TBfighters/newsletter-signup)).
+- I (YummyOreo) am currently working on a "proxy" api, so that every signup has to comply with our standards, not Gaggle's (see [here](https://github.com/TBfighters/newsletter-signup)).
+- We are keeping an eye on the newsletter signups to prevent the spam from returning.
 
 ## Stats
 ### Website
@@ -72,6 +73,16 @@ I (YummyOreo) am currently working on a "proxy" api, so that every signup has to
 | UK            | 103     |
 | Canada        | 65      |
 > https://discord.com/channels/252701351786577920/1146483253725888542/1236844806869749760
+
+#### Requests per Region for the Last 30 days on 2024-05-24
+| Region        | Traffic |
+| ------------- | ------- |
+| United States | 25,848  |
+| China         | 12,473  |
+| Russia        | 4,567   |
+| Germany       | 2,219   |
+| Canada        | 2,055   |
+
 
 ### Newsletter
 - On 2024-05-07 and 2024-05-05 there were 885 new members and 129 failed deliveries.[^3]
