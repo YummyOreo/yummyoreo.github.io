@@ -1,14 +1,14 @@
 ## Key Take Aways
 The incident started on May 4th, 2024 (2024-05-04) and ended on May 24th, 2024 (2024-05-24), lasting 20 days.
 
-The result of the actions taken to remedy the incident make it impossible to signup if the name equals the email exactly and all signups where the name matches the email exactly have been removed. We do not intend revert this change in the future.
+The result of the actions taken to remedy the incident make it impossible to signup if the name equals the email exactly and all signups where the name matches the email exactly and had the welcome message fail to deliver have been removed. We do not intend revert this change in the future.
 
 ## Summary
 Starting on May 4th, 2024 Cloudflare reported that automated (or bot) traffic had increased by 82% for the tbfighters.com domain.[^1] Further investigation revealed that the traffic was coming from China and Russia. This in its self is not a problem due to caching and is still ongoing at the time of writing this.
 
 During the same time, signups to the newsletter also spiked, along with hard and soft bounces on new signups when attempting to send the welcome message.[^3] Signups where the name matched the email exactly also spiked during this time.[^4]
 
-In response, we have removed all of the signups if their name matches their emails exactly and prevented signups from happening if the name matches their email.
+In response, we have removed all signups where the name matches the email exactly and had the welcome message fail to deliver. We also now prevente signups from happening if the name matches their email.
 
 ## Timeline
 ### May 4th, 2024 (2024-05-04)
@@ -38,7 +38,7 @@ Gaggle responds to email saying they can't do anything.[^8]
 Dan reports that the PR worked, the spam signups have stopped.[^9]
 
 ## Rational
-We believe that these signups (where name matches email) are spam because of the increase in bots on the website and there has been almost no signups where the name matches the email before the incident on the website began.[^5]
+We believe that these signups (where name matches email) are spam because of the increase in bots on the website and, from what we could tell, there has been almost no signups where the name matches the email before the incident on the website began.[^5]
 
 ## Response
 ### Rejected Options
@@ -86,8 +86,8 @@ This solution could be circumvented by just going to Gaggle directly.
 ### Newsletter
 - On 2024-05-07 and 2024-05-05 there were 885 new members and 129 failed deliveries.[^3]
 	- The two days before 2024-05-02, for reference, there were only 302 members and 54 failed deliveries.[^10]
-- There have been well over 400 signups deleted.[^11]
-- There had been no signups were the email matched the name before the incident on the website started.[^5]
+- There have been at least 2,700 signups deleted where the name matched the email and had the welcome message fail to deliver.[^11]
+- From what we can tell, there had been no signups were the email matched the name before the incident on the website started.[^5]
 - On 2024-05-10, for reference, there was 130 new spam signups.[^6]
 
 ## Reflection
@@ -104,4 +104,4 @@ Here are a few things that we could do better:
 [^8]: https://discord.com/channels/252701351786577920/1149204674390536262/1239315380498075658
 [^9]: https://discord.com/channels/252701351786577920/1149204674390536262/1244066823620530297
 [^10]: https://discord.com/channels/252701351786577920/1149204674390536262/1237378963693895721
-[^11]: https://discord.com/channels/252701351786577920/1149204674390536262/1237940608115671151
+[^11]: https://discord.com/channels/252701351786577920/1149204674390536262/1244732065451085974
