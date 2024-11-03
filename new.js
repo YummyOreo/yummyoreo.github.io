@@ -44,6 +44,7 @@ function setFont(word) {
 		canvasCTX.font = "2em 'Monoton', serif";
 	} else if (word == "about") {
 		canvasCTX.font = "2em 'Playwrite GB S', serif";
+
 	} else if (word == "now") {
 		canvasCTX.font = "2em 'Bakbak One', serif";
 	}
@@ -79,6 +80,17 @@ function changed(h2) {
 	h2.classList.toggle("not-hovered");
 	h2.classList.toggle("hovered");
 	fillScreen(h2.id);
+
+	let pfp = document.getElementById("pfp");
+	if (h2.id == "about") {
+		pfp.classList.add("active")
+		pfp.classList.remove("inactive")
+		positionPfp(+0.1, 0.1);
+	} else {
+		pfp.classList.remove("active")
+		pfp.classList.add("inactive")
+		positionPfp(0, 0);
+	}
 }
 
 
@@ -91,6 +103,13 @@ function entered(h2) {
 		}
 	})
 	fillScreen(h2.id);
+
+	if (h2.id == "about") {
+		let pfp = document.getElementById("pfp");
+		pfp.classList.add("active")
+		pfp.classList.remove("inactive")
+		positionPfp(+0.1, 0.1);
+	}
 }
 
 function left() {
@@ -99,6 +118,12 @@ function left() {
 		el.classList.remove("hovered");
 	})
 	fillScreen("YummyOreo");
+	let pfp = document.getElementById("pfp");
+	if (pfp.classList.contains("active")) {
+		pfp.classList.remove("active")
+		pfp.classList.add("inactive")
+		positionPfp(0, 0);
+	}
 }
 
 function handleMouseOver(e) {
@@ -133,10 +158,23 @@ function handleMouseOver(e) {
 let nav = document.querySelector("main");
 nav.addEventListener("mousemove", _.throttle(handleMouseOver, 10))
 
-// let h2s = document.getElementsByTagName("h2");
-// for (let i = 0; i < h2s.length; i++) {
-// 	let target_h2 = h2s.item(i);
-// 	// instead, use mousover (or something like that) on the whole nav element, then check each element to see if its over it (or within 2 px of it) then trigger either mouseenter or mouseout (your own functions). Do a min max function on each cordinate (x y), if it didn't change (or only changed by  px), then its "in" the element.
-// 	target_h2.addEventListener("mouseenter", hoverEffect(target_h2, true))
-// 	target_h2.addEventListener("mouseout", hoverEffect(target_h2, false))
-// }
+let about = document.getElementById("about");
+let pfp = document.getElementById("pfp");
+
+let boundsAb = about.getBoundingClientRect();
+let rightAb = boundsAb.right;
+let topAb = boundsAb.top;
+
+let boundsPfp = pfp.getBoundingClientRect();
+let rightPfp = boundsPfp.right;
+let topPfp = boundsPfp.top;
+
+let topDiff = topAb - topPfp;
+let rightDiff = rightAb - rightPfp;
+
+function positionPfp(offsetX, offsetY) {
+
+	pfp.style.transform = "translate(" + (rightDiff + (rightDiff * (0.5 + offsetX))) + "px, " + (topDiff + (topDiff * (0.5 + offsetY))) + "px) rotate(20deg)";
+}
+
+positionPfp(0, 0)
