@@ -28,10 +28,16 @@ let canvas = createHiPPICanvas(window.innerWidth, window.innerHeight);
 document.body.append(canvas);
 let canvasCTX = canvas.getContext("2d");
 
+let boundingBoxes = document.getElementById("nav-inner").getBoundingClientRect();
+function drawBackgroundRect() {
+	canvasCTX.roundRect(boundingBoxes.x, boundingBoxes.y, boundingBoxes.width, boundingBoxes.height, 0);
+	canvasCTX.fillStyle = "#d17b0f"
+	canvasCTX.fill();
+
+}
+
 function initScrolling() {
-	canvasCTX.fillStyle = "#d9dac9";
 	canvasCTX.font = "2em 'Playwrite GB S', serif";
-	canvasCTX.fillText("test", 20, 20)
 	fillScreen("YummyOreo")
 }
 
@@ -51,6 +57,7 @@ function setFont(word) {
 }
 
 function fillScreen(word) {
+	canvasCTX.fillStyle = "#d9dac9";
 	canvasCTX.clearRect(0, 0, canvas.width, canvas.height);
 	setFont(word);
 	let wordDimentions = canvasCTX.measureText(word);
@@ -67,6 +74,7 @@ function fillScreen(word) {
 			canvasCTX.fillText(word, (w * (width + spaceWidth)) - rndOffset, (height + (height * 0.2)) * h);
 		}
 	}
+	drawBackgroundRect()
 }
 
 initScrolling()
