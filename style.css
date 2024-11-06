@@ -80,6 +80,10 @@ p {
     margin-bottom: 1em;
 }
 
+.larger {
+    font-size: 1.3em;
+}
+
 .grey {
     color: var(--fg2);
 }
