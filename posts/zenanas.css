@@ -293,3 +293,8 @@ span.ft {
         font-size: 3em;
     }
 }
+
+footer {
+    position: relative;
+    z-index: 4;
+}
