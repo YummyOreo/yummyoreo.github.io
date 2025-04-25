@@ -1,0 +1,295 @@
+body {
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+#top {
+    --window-size: calc(100vh - (80px + 2em));
+    height: fit-content;
+    width: 100vw;
+}
+
+.wrapper-top {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    position: relative;
+    z-index: 10;
+    background: var(--bg);
+}
+
+main {
+    background-color: var(--accent2);
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+main:before {
+    content: "";
+    background-image: url(../assets/zenana/paper.jpg);
+    background-size: cover;
+    background-position: center center;
+    opacity: 50%;
+    mix-blend-mode: multiply;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+section {
+    display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.header {
+    height: fit-content;
+    width: 50%;
+    color: var(--bg);
+    margin: auto auto;
+}
+
+.header h2 {
+    font-size: 2.5em;
+    background-color: var(--fg);
+    height: fit-content;
+    text-align: center;
+    padding: 1em 2em;
+    z-index: 3;
+    position: relative;
+
+    border: 0.2em solid var(--bg);
+}
+
+.header.one {
+    padding-top: 35vh;
+}
+
+.header.one img {
+    position: absolute;
+    top: 0;
+    transform: translate(0%, 25%)
+}
+
+
+.header.two {
+    padding-top: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+}
+
+.header.two h2 {
+    max-width: 50%;
+    margin: auto 0;
+    transform: translate(5%, 0%);
+    z-index: 2;
+}
+
+.header.two .image {
+    transform: translate(-5%, 0%);
+    border-radius: 1em;
+    z-index: 1;
+}
+
+.header.three {
+    padding-top: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header.three h2 {
+    width: 50%;
+    margin: auto 0;
+    transform: translate(-10%, 0%);
+}
+
+.header.three .image {
+    width: 35%;
+    transform: translate(10%, 0%);
+
+    border-radius: 1em;
+}
+
+.header.four {
+    padding-top: 50vh;
+    padding-bottom: 25vh;
+    width: 75%;
+}
+
+.image.four {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image.four img {
+    display: block;
+    margin: auto;
+    transform: translate(0, 15vh);
+    height: 100%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+
+    * {
+        overflow-x: clip;
+    }
+
+    .header h2 {
+        font-size: 1.5em;
+        background-color: var(--fg);
+        height: fit-content;
+        text-align: center;
+        padding: 1em 2em;
+        z-index: 3;
+        position: relative;
+
+        border: 0.2em solid var(--bg);
+    }
+
+    .header {
+        width: 80%;
+        max-width: unset;
+    }
+
+    .header h2 {
+        max-width: unset;
+    }
+
+    .header.one img {
+        width: 80%;
+        transform: translate(0%, 15%);
+    }
+
+    .header.two {
+        flex-direction: column-reverse;
+    }
+
+    .header.two h2 {
+        width: 70%;
+        max-width: unset;
+        margin: auto 0;
+        transform: translate(0%, 0%);
+        z-index: 2;
+    }
+
+    .header.two .image {
+        width: 90%;
+        transform: translate(0%, 20%);
+        border-radius: 1em;
+        z-index: 1;
+    }
+
+    .header.three {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header.three h2 {
+        width: 70%;
+        margin: auto 0;
+        transform: translate(0%, 0%);
+    }
+
+    .header.three .image {
+        width: 80%;
+        transform: translate(0%, 20%);
+    }
+
+    .header.four {
+        padding-top: 50vh;
+        padding-bottom: 25vh;
+        width: 95%;
+    }
+
+    .image.four {
+        width: 200%;
+        transform: translate(-25%, 15%);
+    }
+
+    .image.four img {
+        height: unset;
+        width: 100%;
+    }
+}
+
+/* */
+
+#main {
+    position: relative;
+    z-index: 2;
+}
+
+#main .wrapper {
+    width: 70%;
+    margin: auto auto;
+    background-color: var(--bg);
+    padding: 5em 5em;
+}
+
+#main .wrapper * {
+    z-index: 3;
+}
+
+#main h2 {
+    margin-bottom: 0em;
+}
+
+h4 {
+    font-size: 1.4em;
+    margin-bottom: 0em;
+}
+
+#main p:not(.byline) {
+    font-size: 1.5em;
+}
+
+/* footnotes */
+
+span.footnote,
+span.ft {
+    font-size: 0.5em;
+    vertical-align: super;
+    font-weight: 800;
+}
+
+.indent {
+    margin-left: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #main p:not(.byline) {
+        font-size: 1.2em;
+    }
+
+    #main .wrapper {
+        width: 90%;
+        padding: 3em 5%;
+        margin: 0 0;
+    }
+
+    #main h2 {
+        font-size: 3em;
+    }
+}
