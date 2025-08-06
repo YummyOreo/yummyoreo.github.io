@@ -1,0 +1,244 @@
+@font-face {
+    font-family: "Times New Roman";
+    font-style: normal;
+    src: url(../assets/muthu/times.ttf)
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+#top {
+    --window-size: calc(100vh - (80px + 2em));
+    height: fit-content;
+    width: 100vw;
+}
+
+.wrapper-top {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    width: 100%;
+}
+
+main * {
+    font-family: "Times New Roman";
+}
+
+div.wrapper {
+    width: 70%;
+    max-width: 1000px;
+    position: relative;
+    z-index: 1;
+    margin: auto auto;
+}
+
+body {
+    background-image: url(../assets/muthu/newspaper-tieable-bg.jpg);
+    background-repeat: repeat;
+}
+
+/* body:before { */
+/*     content: ""; */
+/*     background-image: url(../assets/muthu/newspaper-tieable.jpg); */
+/*     background-size: auto; */
+/*     background-repeat: space; */
+/*     opacity: 50%; */
+/*     mix-blend-mode: multiply; */
+/*     position: absolute; */
+/*     top: 0; */
+/*     left: 0; */
+/*     top: 0; */
+/*     left: 0; */
+/*     right: 0; */
+/*     bottom: 0; */
+/*     z-index: 2; */
+/* } */
+
+section {
+    display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+
+/* header */
+
+h1#series {
+    font-size: 6rem;
+    font-style: italic;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.meta {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: normal;
+    justify-content: space-between;
+    border-top: var(--fg) 2px solid;
+    border-bottom: var(--fg) 2px solid;
+}
+
+.meta p {
+    margin-bottom: 2px;
+}
+
+
+h2 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.subheading {
+    width: max-content;
+    font-size: 3rem;
+}
+
+.subheading hr {
+    border-width: 2px;
+    width: 50%;
+    margin: 5px auto;
+}
+
+
+/* content */
+
+hr.full {
+    width: 100%;
+    border-width: 2px;
+}
+
+.split .text p,
+.full p {
+    line-height: 2rem;
+    font-size: 2rem;
+    margin-bottom: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.split.brokenup {
+    margin-bottom: 0;
+}
+
+.full.brokenup {
+    margin-top: 0;
+}
+
+.split .text {
+    width: 60%;
+}
+
+.split .animation {
+    width: 40%;
+    align-content: center;
+}
+
+.split .animation canvas {
+    width: 100%;
+}
+
+.split {
+    display: flex;
+}
+
+.split.even {
+    flex-direction: row-reverse;
+}
+
+.split,
+.full {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+blockquote {
+    width: 90%;
+    margin: 10px auto;
+}
+
+blockquote p {
+    font-size: 1.75rem !important;
+    line-height: 1.75rem !important;
+}
+
+blockquote hr {
+    border-width: 2px;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 2em;
+}
+
+/* footnotes */
+
+h3 {
+    font-size: 2.5rem;
+}
+
+span.footnote,
+span.ft {
+    font-size: 0.5em;
+    vertical-align: super;
+    font-weight: 800;
+}
+
+.footnotes .full p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    div.wrapper {
+        width: 95%;
+        max-width: unset;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1#series {
+        font-size: 5rem;
+    }
+
+    .subheading {
+        width: 90%;
+    }
+
+    .split,
+    .split.even {
+        gap: 1rem;
+        flex-direction: column-reverse;
+    }
+
+    .split .text {
+        width: 100%;
+    }
+
+    .split .animation {
+        width: 100%;
+    }
+
+    .split .text p,
+    .full p {
+        line-height: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    blockquote p {
+        font-size: 1.5rem !important;
+        line-height: 1.5rem !important;
+    }
+}
