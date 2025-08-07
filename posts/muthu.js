@@ -2,7 +2,7 @@ const options = {
   root: null,
   rootMargin: "0px",
   scrollMargin: "0px",
-  threshold: 0,
+  threshold: 0.2,
 };
 
 var animation1 = bodymovin.loadAnimation({
