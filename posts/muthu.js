@@ -5,15 +5,10 @@ const options = {
   threshold: 0.2,
 };
 
-var animation1 = bodymovin.loadAnimation({
-  container: document.getElementById('animation-1'), // Required
-  path: '../assets/muthu/1-lottie.json', // Required
-  renderer: 'canvas', // Required
-  loop: true, // Optional
-  autoplay: true, // Optional
-  name: "Hello World", // Name for future reference. Optional.
-})
-
+IntersectingAnimation({
+	id: "animation-1",
+	path: "../assets/muthu/1-lottie.json"
+});
 
 IntersectingAnimation({
 	id: "animation-3",
