@@ -8,10 +8,6 @@ body {
     overflow-x: hidden;
 }
 
-h2 {
-    font-size: 4em;
-}
-
 #top {
     --window-size: calc(100vh - (80px + 2em));
     height: fit-content;
@@ -99,7 +95,6 @@ h2 {
 }
 
 .subheading {
-    width: max-content;
     font-size: 3rem;
 }
 
@@ -205,6 +200,15 @@ span.ft {
     div.wrapper {
         width: 95%;
         max-width: unset;
+    }
+
+    h2 {
+        font-size: 4rem;
+        margin-bottom: 0rem;
+    }
+
+    .subheading {
+        font-size: 2.5rem;
     }
 }
 
