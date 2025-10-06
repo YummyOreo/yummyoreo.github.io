@@ -113,6 +113,17 @@ var features = [{
 }
 ]
 
+function icon(color) {
+	return new L.Icon({
+		iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-${color}.png`,
+		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+		iconSize: [25, 41],
+		iconAnchor: [12, 41],
+		popupAnchor: [1, -34],
+		shadowSize: [41, 41]
+	});
+}
+
 for (let i = 0; i < features.length; i++) {
 	let feature = features[i];
 	let type = feature["type"];
@@ -123,21 +134,9 @@ for (let i = 0; i < features.length; i++) {
 		f.bindPopup(title)
 	}
 	if (type == "marker") {
-		let f = L.marker(latlng, { "color": feature["color"] }).addTo(map);
+		let f = L.marker(latlng, { "icon": icon(feature["color"]) }).addTo(map);
 		f.bindPopup(title)
 	}
 }
 
-/*
-	*0: Object { lat: 41.86822305005433, lng: -87.86620586650808 }
-?
-1: Object { lat: 41.868243023974124, lng: -87.86544429383113 }
-?
-2: Object { lat: 41.86781558072845, lng: -87.86540139201868 }
-?
-3: Object { lat: 41.86779960148629, lng: -87.8662005070107 }
-	*
-	* */
-
 map.on('click', onMapClick);
-// }).addTo(map);
