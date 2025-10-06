@@ -1,0 +1,14 @@
+main {
+    width: 70%;
+}
+
+#map {
+    height: 40rem;
+}
+
+
+@media only screen and (max-width: 992px) {
+    main {
+        width: 95%;
+    }
+}
