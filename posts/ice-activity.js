@@ -110,7 +110,23 @@ var features = [{
 	"title": "September 4th protests",
 	"type": "marker",
 	"color": "blue"
-}
+},
+{
+
+	"latlng": [41.91732182146367, -87.71675614487668],
+	"title": "ICE Citing 2025-10-06 12:10pm",
+	"type": "marker",
+	"color": "red",
+	"size": "small"
+},
+{
+
+	"latlng": [41.87828233024169, -87.78684051696536],
+	"title": "ICE Citing 2025-10-06 11:15am",
+	"type": "marker",
+	"color": "red",
+	"size": "small"
+},
 ]
 
 function icon(color) {
@@ -124,6 +140,17 @@ function icon(color) {
 	});
 }
 
+function smallIcon(color) {
+	return new L.Icon({
+		iconUrl: `https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-${color}.png`,
+		shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+		iconSize: [18.75, 30.75],
+		iconAnchor: [12, 30.75],
+		popupAnchor: [1, -34],
+		shadowSize: [30.75, 30.75]
+	});
+}
+
 for (let i = 0; i < features.length; i++) {
 	let feature = features[i];
 	let type = feature["type"];
@@ -134,8 +161,13 @@ for (let i = 0; i < features.length; i++) {
 		f.bindPopup(title)
 	}
 	if (type == "marker") {
-		let f = L.marker(latlng, { "icon": icon(feature["color"]) }).addTo(map);
-		f.bindPopup(title)
+		if (feature["size"] == "small") {
+			let f = L.marker(latlng, { "icon": smallIcon(feature["color"]), "opacity": 0.75 }).addTo(map);
+			f.bindPopup(title)
+		} else {
+			let f = L.marker(latlng, { "icon": icon(feature["color"]) }).addTo(map);
+			f.bindPopup(title)
+		}
 	}
 }
 

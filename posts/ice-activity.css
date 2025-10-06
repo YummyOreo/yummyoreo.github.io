@@ -12,3 +12,8 @@ main {
         width: 95%;
     }
 }
+
+img {
+    border-radius: 0;
+    margin: 0 0;
+}
