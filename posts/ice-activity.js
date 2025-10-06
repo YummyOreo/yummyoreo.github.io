@@ -7,7 +7,6 @@ window.mobileCheck = function() {
 let y = 11;
 
 if (window.mobileCheck()) {
-
 	y = 10
 }
 
@@ -17,22 +16,22 @@ googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}'
 	subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
 }).addTo(map);
 
-var popup = L.popup();
-
-let polygon = []
-
-var p = L.polygon(polygon).addTo(map);
-
-function onMapClick(e) {
-	polygon.push(e.latlng)
-	console.log(polygon)
-	p.setLatLngs(polygon)
-	// popup
-	// 	.setLatLng(e.latlng)
-	// 	.setContent("You clicked the map at " + e.latlng.toString())
-	// 	.openOn(map);
-
-}
+// var popup = L.popup();
+//
+// let polygon = []
+//
+// var p = L.polygon(polygon).addTo(map);
+//
+// function onMapClick(e) {
+// 	polygon.push(e.latlng)
+// 	console.log(polygon)
+// 	p.setLatLngs(polygon)
+// 	// popup
+// 	// 	.setLatLng(e.latlng)
+// 	// 	.setContent("You clicked the map at " + e.latlng.toString())
+// 	// 	.openOn(map);
+//
+// }
 
 var features = [{
 	"latlng": [
