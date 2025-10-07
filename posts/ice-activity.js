@@ -176,6 +176,12 @@ var features = [{
 	"type": "marker",
 	"color": "red",
 },
+{
+	"latlng": [41.430142111832346, -88.10926291534555],
+	"title": "National Gaurd Stationed Here",
+	"type": "marker",
+	"color": "green",
+},
 ]
 
 function icon(color) {
