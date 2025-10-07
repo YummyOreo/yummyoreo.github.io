@@ -127,6 +127,55 @@ var features = [{
 	"color": "red",
 	"size": "small"
 },
+{
+	"latlng": [41.615864649059525, -87.85958772097479],
+	"title": "ICE Citing 2025-10-06 1pm",
+	"type": "marker",
+	"color": "red",
+	"size": "small"
+},
+{
+	"latlng": [41.84715380569649, -87.77854204125124],
+	"title": "ICE Citing & Possible Arrests 2025-10-07",
+	"type": "marker",
+	"color": "red",
+},
+{
+	"latlng": [41.84705227446955, -87.78344689785419],
+	"title": "ICE Citing & Possible Arrests 2025-10-07",
+	"type": "marker",
+	"color": "red",
+},
+{
+	"latlng": [41.837078341531395, -87.7145724745194],
+	"title": "ICE Citing & Possible Arrests 2025-10-07",
+	"type": "marker",
+	"color": "red",
+},
+{
+	"latlng": [41.75822759448448, -87.7323247580811],
+	"title": "ICE Citing & Possible Arrests 2025-10-07",
+	"type": "marker",
+	"color": "red",
+},
+{
+	"latlng": [41.7209536910353, -87.70217760345575],
+	"title": "ICE Citing & Possible Arrests 2025-10-07",
+	"type": "marker",
+	"color": "red",
+},
+{
+	"latlng": [41.744909612220994, -87.76814014174018],
+	"title": "ICE Citing & Possible Arrests 2025-10-07",
+	"type": "marker",
+	"color": "red",
+},
+{
+	"latlng": [41.70585523110536, -87.77937403414694],
+	"title": "ICE Citing & Possible Arrests 2025-10-07",
+	"type": "marker",
+	"color": "red",
+},
 ]
 
 function icon(color) {
