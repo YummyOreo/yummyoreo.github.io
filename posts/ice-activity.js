@@ -10,7 +10,7 @@ if (window.mobileCheck()) {
 	y = 10
 }
 
-var map = L.map('map').setView([41.8680, -87.6650], y);
+var map = L.map('map').setView([41.8480, -87.6650], y);
 googleHybrid = L.tileLayer('http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}', {
 	maxZoom: 20,
 	subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
@@ -114,7 +114,7 @@ var features = [{
 {
 
 	"latlng": [41.91732182146367, -87.71675614487668],
-	"title": "ICE Citing 2025-10-06 12:10pm",
+	"title": "ICE Sighting 2025-10-06 12:10pm",
 	"type": "marker",
 	"color": "red",
 	"size": "small"
@@ -122,57 +122,57 @@ var features = [{
 {
 
 	"latlng": [41.87828233024169, -87.78684051696536],
-	"title": "ICE Citing 2025-10-06 11:15am",
+	"title": "ICE Sighting 2025-10-06 11:15am",
 	"type": "marker",
 	"color": "red",
 	"size": "small"
 },
 {
 	"latlng": [41.615864649059525, -87.85958772097479],
-	"title": "ICE Citing 2025-10-06 1pm",
+	"title": "ICE Sighting 2025-10-06 1pm",
 	"type": "marker",
 	"color": "red",
 	"size": "small"
 },
 {
 	"latlng": [41.84715380569649, -87.77854204125124],
-	"title": "ICE Citing & Possible Arrests 2025-10-07",
+	"title": "ICE Sighting & Possible Arrests 2025-10-07",
 	"type": "marker",
 	"color": "red",
 },
 {
 	"latlng": [41.84705227446955, -87.78344689785419],
-	"title": "ICE Citing & Possible Arrests 2025-10-07",
+	"title": "ICE Sighting & Possible Arrests 2025-10-07",
 	"type": "marker",
 	"color": "red",
 },
 {
 	"latlng": [41.837078341531395, -87.7145724745194],
-	"title": "ICE Citing & Possible Arrests 2025-10-07",
+	"title": "ICE Sighting & Possible Arrests 2025-10-07",
 	"type": "marker",
 	"color": "red",
 },
 {
 	"latlng": [41.75822759448448, -87.7323247580811],
-	"title": "ICE Citing & Possible Arrests 2025-10-07",
+	"title": "ICE Sighting & Possible Arrests 2025-10-07",
 	"type": "marker",
 	"color": "red",
 },
 {
 	"latlng": [41.7209536910353, -87.70217760345575],
-	"title": "ICE Citing & Possible Arrests 2025-10-07",
+	"title": "ICE Sighting & Possible Arrests 2025-10-07",
 	"type": "marker",
 	"color": "red",
 },
 {
 	"latlng": [41.744909612220994, -87.76814014174018],
-	"title": "ICE Citing & Possible Arrests 2025-10-07",
+	"title": "ICE Sighting & Possible Arrests 2025-10-07",
 	"type": "marker",
 	"color": "red",
 },
 {
 	"latlng": [41.70585523110536, -87.77937403414694],
-	"title": "ICE Citing & Possible Arrests 2025-10-07",
+	"title": "ICE Sighting & Possible Arrests 2025-10-07",
 	"type": "marker",
 	"color": "red",
 },
@@ -182,6 +182,12 @@ var features = [{
 	"type": "marker",
 	"color": "green",
 },
+{
+	"latlng": [41.808527258531285, -87.68441628769672],
+	"title": "ICE Sighting & Arrests 2025-10-07 - 4pm",
+	"type": "marker",
+	"color": "red",
+}
 ]
 
 function icon(color) {
