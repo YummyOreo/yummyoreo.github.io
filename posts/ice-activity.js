@@ -193,6 +193,30 @@ var features = [{
 	"title": "ICE Sighting 2025-10-07 - 4pm",
 	"type": "marker",
 	"color": "red",
+},
+{
+	"latlng": [41.67925609755027, -87.5025741449531],
+	"title": "ICE Sighting & Arrest 2025-10-08 - 8:15am",
+	"type": "marker",
+	"color": "red",
+},
+{
+	"latlng": [41.83689216248008, -87.72435505029904],
+	"title": "ICE Sighting 2025-10-08 - 9:40am",
+	"type": "marker",
+	"color": "red",
+},
+{
+	"latlng": [41.93619372803393, -87.89395321610586],
+	"title": "ICE Sighting 2025-10-08 - 8:45am",
+	"type": "marker",
+	"color": "red",
+},
+{
+	"latlng": [41.67797903781519, -87.48791891635453],
+	"title": "ICE Sighting & Arrests 2025-10-08 - 8:40am",
+	"type": "marker",
+	"color": "red"
 }
 ]
 
