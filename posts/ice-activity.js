@@ -68,7 +68,8 @@ var features = [{
 	"latlng": [41.7602604, -87.5573108],
 	"title": "South Shore Helicopter Raid",
 	"type": "marker",
-	"color": "red"
+	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [
@@ -139,42 +140,49 @@ var features = [{
 	"title": "ICE Sighting & Possible Arrests 2025-10-07",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.84705227446955, -87.78344689785419],
 	"title": "ICE Sighting & Possible Arrests 2025-10-07",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.837078341531395, -87.7145724745194],
 	"title": "ICE Sighting & Possible Arrests 2025-10-07",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.75822759448448, -87.7323247580811],
 	"title": "ICE Sighting & Possible Arrests 2025-10-07",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.7209536910353, -87.70217760345575],
 	"title": "ICE Sighting & Possible Arrests 2025-10-07",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.744909612220994, -87.76814014174018],
 	"title": "ICE Sighting & Possible Arrests 2025-10-07",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.70585523110536, -87.77937403414694],
 	"title": "ICE Sighting & Possible Arrests 2025-10-07",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.430142111832346, -88.10926291534555],
@@ -187,13 +195,16 @@ var features = [{
 	"title": "ICE Sighting & Arrests 2025-10-07 - 4pm",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.793163983733024, -87.72807346874357],
 	"title": "ICE Sighting 2025-10-07 - 4pm",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
+//
 {
 	"latlng": [41.67925609755027, -87.5025741449531],
 	"title": "ICE Sighting & Arrest 2025-10-08 - 8:15am",
