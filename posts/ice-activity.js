@@ -188,7 +188,7 @@ var features = [{
 	"latlng": [41.430142111832346, -88.10926291534555],
 	"title": "National Gaurd Stationed Here",
 	"type": "marker",
-	"color": "green",
+	"color": "orange",
 },
 {
 	"latlng": [41.808527258531285, -87.68441628769672],
@@ -238,6 +238,18 @@ var features = [{
 {
 	"latlng": [41.84795261420471, -87.72220789153262],
 	"title": "ICE Sighting 2025-10-08 - 10:55am",
+	"type": "marker",
+	"color": "red",
+},
+{
+	"latlng": [41.78142132619188, -87.7203868996591],
+	"title": "ICE Sighting 2025-10-08 - 1:30pm",
+	"type": "marker",
+	"color": "red",
+},
+{
+	"latlng": [41.83018108220738, -87.69130437954416],
+	"title": "ICE Sighting 2025-10-08 - 1:30pm",
 	"type": "marker",
 	"color": "red",
 },
