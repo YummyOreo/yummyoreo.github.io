@@ -4,6 +4,8 @@ main {
 
 #map {
     height: 40rem;
+    border-radius: 0.5rem;
+    border: 4px var(--fg) solid;
 }
 
 
@@ -16,4 +18,12 @@ main {
 img {
     border-radius: 0;
     margin: 0 0;
+}
+
+.key {
+    font-size: 1.3em;
+}
+
+.key img {
+    height: 1em;
 }
