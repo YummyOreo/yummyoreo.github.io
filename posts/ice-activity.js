@@ -294,6 +294,12 @@ var features = [{
 	"title": "ICE Sighting 2025-10-09 - 8am",
 	"type": "marker",
 	"color": "red"
+},
+{
+	"latlng": [41.83091411182272, -87.74626856097042],
+	"title": "ICE Sighting 2025-10-9 - 8:20am",
+	"type": "marker",
+	"color": "red",
 }
 ]
 
