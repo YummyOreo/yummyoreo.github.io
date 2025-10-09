@@ -312,7 +312,19 @@ var features = [{
 	"title": "ICE Sighting & Arrest 2025-10-09 - 9am",
 	"type": "marker",
 	"color": "red",
-}
+},
+{
+	"latlng": [41.77779709847897, -88.2817605371943],
+	"title": "ICE Sighting 2025-10-09 - 8am",
+	"type": "marker",
+	"color": "red",
+},
+{
+	"latlng": [41.78219307026216, -88.3773389736608],
+	"title": "ICE Sighting 2025-10-09 - 8–9am",
+	"type": "marker",
+	"color": "red",
+},
 ]
 
 function icon(color) {
