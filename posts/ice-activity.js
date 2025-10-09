@@ -306,6 +306,12 @@ var features = [{
 	"title": "ICE Sighting & Arrest 2025-10-09 - ~8:30am",
 	"type": "marker",
 	"color": "red",
+},
+{
+	"latlng": [41.79774908088916, -87.65983227589265],
+	"title": "ICE Sighting & Arrest 2025-10-09 - 9am",
+	"type": "marker",
+	"color": "red",
 }
 ]
 
