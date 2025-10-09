@@ -52,6 +52,13 @@ var features = [{
 	"color": "blue"
 },
 {
+	"latlng": [41.868033871118485, -87.86589144536441],
+	"title": "National Gaurd at Broadview facility as of 2025-10-09",
+	"type": "marker",
+	"color": "orange",
+	"size": "small"
+},
+{
 	"latlng": [
 		[41.86824655686052, -87.86568003790573],
 		[41.86921728178674, -87.86571221703294],
