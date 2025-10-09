@@ -210,64 +210,82 @@ var features = [{
 	"title": "ICE Sighting & Arrest 2025-10-08 - 8:15am",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.83689216248008, -87.72435505029904],
 	"title": "ICE Sighting 2025-10-08 - 9:40am",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.93917797624229, -87.72385731338971],
 	"title": "ICE Sighting and Arrests 2025-10-08 - 8:45am",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.67797903781519, -87.48791891635453],
 	"title": "ICE Sighting & Arrests 2025-10-08 - 8:40am",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.60933270110274, -88.14010884830824],
 	"title": "ICE Sighting and Arrest 2025-10-08 - 8:02am",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.84795261420471, -87.72220789153262],
 	"title": "ICE Sighting 2025-10-08 - 10:55am",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.78142132619188, -87.7203868996591],
 	"title": "ICE Sighting 2025-10-08 - 1:30pm",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.83018108220738, -87.69130437954416],
 	"title": "ICE Sighting 2025-10-08 - 1:30pm",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.86548854877734, -87.78373115832092],
 	"title": "ICE Sighting & Arrests 2025-10-08 - 1pm",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.865550661608474, -87.76924232159232],
 	"title": "ICE Sighting 2025-10-08 - 12:30pm",
 	"type": "marker",
 	"color": "red",
+	"size": "small"
 },
 {
 	"latlng": [41.77605829496208, -87.71533176108983],
 	"title": "ICE Sighting, Home Invasion, & Arrest 2025-10-08 - 7:30pm",
+	"type": "marker",
+	"color": "red",
+	"size": "small"
+},
+//
+{
+	"latlng": [41.81401933514338, -87.66877008098797],
+	"title": "ICE Sighting & Arrest 2025-10-09 - 7:30am",
 	"type": "marker",
 	"color": "red",
 },
