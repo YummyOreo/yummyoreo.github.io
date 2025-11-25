@@ -12,67 +12,99 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
 	<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
 	<!--Open Graph Tags-->
-	<meta property="og:site_name" content="Quinn" />
-	<meta property="og:url" content="https://quinn-is.a-good.dev" />
+	<meta property="og:site_name" content="Q³" />
+	<meta property="og:url" content="https://quinnyates.me" />
 	<meta property="og:type" content="website" />
 	<!-- Style Tags -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="./style.css" />
-	<link rel="stylesheet" href="./non-doc.css" />
+	<link rel="stylesheet" href="./style-new.css" />
+	<!-- <link rel="stylesheet" href="./non-doc.css" /> -->
 	<script src="menu.js" defer></script>
 	<!-- Other -->
-	<meta property="og:title" content="About | Quinn" />
-	<meta property="og:description" content="About Me" />
-	<title>About | Quinn</title>
+	<meta property="og:title" content="About | Q³" />
+	<meta property="og:description" content="About me" />
+	<title>About | Q³</title>
 </head>
 
 <body class="homepage">
 	<nav>
-		<div class="nav-wrapper">
-			<span class="left"><a href="/">Quinn</a></span>
-			<div class="menu">
-				<span class="right"><a href="/about.html">About</a></span>
-				<span class="right"><a href="/posts">Posts</a></span>
-				<span class="right"><a href="/now.html">Now</a></span>
-			</div>
-			<a id="hamburger-button" href="#" title="menu"></a>
-		</div>
+		<a href="/"><div class="container">
+		  <div class="cube">
+		    <div class="s1"><h1>Q³</h1></div>
+		    <div class="s2"></div>
+		    <div class="s3"></div>
+		    <div class="s4"></div>
+		    <div class="s5"></div>
+		    <div class="s6"></div>
+		  </div>
+		</div></a>
+		<svg id="noice">
+		    <filter id="noise-filter">
+			<feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="4" stitchTiles="stitch"></feTurbulence>
+			<feColorMatrix type="saturate" values="0"></feColorMatrix>
+			<feComponentTransfer>
+			    <feFuncR type="linear" slope="0.49"></feFuncR>
+			    <feFuncG type="linear" slope="0.49"></feFuncG>
+			    <feFuncB type="linear" slope="0.49"></feFuncB>
+			    <feFuncA type="linear" slope="0.5"></feFuncA>
+			</feComponentTransfer>
+			<feComponentTransfer>
+			    <feFuncR type="linear" slope="2.73" intercept="-0.86"/>
+			    <feFuncG type="linear" slope="2.73" intercept="-0.86"/>
+			    <feFuncB type="linear" slope="2.73" intercept="-0.86"/>
+			</feComponentTransfer>
+		    </filter>
+		    <rect width="100%" height="100%" filter="url(#noise-filter)"></rect>
+		</svg>
 	</nav>
+	<div class="info">
+		<div class="wrapper">
+			<span class="left">No. XX</span>
+			<span class="middle">Chicago | Monday, November 23, 2025</span>
+			<span class="right"><a href="about.html"><i>By Quinn</i></a></span>
+		</div>
+	</div>
 	<main>
+		<br>
 		<section id="description">
-			<h1>Quinn</h1>
-			<p>Hi! I'm a high school student and developer who also loves the history of medicine. To stay active
-				I am the captain of my high school ultimate frisbee team (who will hopefully do better
-				this year!). I sometimes post notes and blog posts about topics I'm interested in.</p>
-			<br>
-			<p>I got into coding just before the pandemic with web dev. I was inspired by the various games
-				out there and tried to make some myself. After going down the rabbit hole of coding
-				(sped up by COVID) I tried to make my own things. All of them looking back are horribly
-				coded, but if you want to look, you can find them on my <a
-					href="https://github.com/yummyoreo">Github</a> if you scroll far enough.</p>
-			<br>
-			<p>Recovering from the COVID pandemic and lockdowns, I found an online community called
-				TBFighters, which I (hesitantly) joined and decided to put my webdev skills to use and
-				help them code their website. Talking with the amazing people behind TBFighters, I gained
-				an interest in the history of medicine and started to research that. I currently work on
-				the TBFighters website (improving it to the best of my abilities) and dive into the
-				history of medicine.</p>
+			<div class="wrapper-img">
+				<img src="/assets/moka.jpg" alt="My dog moka">
+				<span class="grey">My dog Moka</span>
+			</div>
+			<div class="wrapper-post">
+				<h2 style="font-size: 5rem;">Quinn</h2>
+				<p>Hi! I'm a high school student that uses their coding skills to try to do good in the world. I also love to research about history! Here you can find some of my projects and posts about random thoughts that I've had or about my research.</p>
+				<br>
+				<p>I have used my coding skills to advocate for an end to TB-the world's deadliest disease-with <a href="https://tbfighters.org" target="_blank">TBFighters</a> and to show the extent of the immigration activity within Chicago.</p>
+				<br>
+				<p>Outside of advocacy, I love to play ultimate frisbee, take pictures, and write (when I get the chance!).</p>
+			</div>
 		</section>
-		<section id="contact">
+		<br>
+		<section id="now" class="wrapper-post">
+			<h2>Now</h2>
+			<p>What I'm currently working on:</p>
+			<ul>
+				<li>Making <a href="https://tbfighters.org">TBFighters.org</a> (and fighting tuberculosis)</li>
+				<li>Getting through high school</li>
+				<li>Protecting immigratns</li>
+				<li>Playing Ultimate Frisbee</li>
+				<li>Writing for this blog</li>
+			</ul>
+		</section>
+		<br>
+		<section id="contact" class="wrapper-post">
 			<h2>Get in Touch</h2>
-			<p><b>Email</b> <a href="mailto:quinnyatesv1@gmail.com">quinnyatesv1@gmail.com</a></p>
+			<p><b>Email</b> <a href="mailto:quinn@quinnyates.me">quinn@quinnyates.me</a></p>
+			<p><b>Bluesky</b> <a href="https://bsky.app/profile/quinnyates.me">@quinnyates.me</a></p>
 		</section>
 	</main>
 	<footer>
 		<div class="footer-wrapper">
 			<a href="https://github.com/yummyoreo" target="_blank">Github</a>
-			<a href="https://bsky.app/profile/quinn-is.a-good.dev" target="_blank" rel="me">Blue Sky</a>
+			<a href="https://bsky.app/profile/quinnyates.me" target="_blank" rel="me">Blue Sky</a>
 			<a href="https://hachyderm.io/@YummyOreo" target="_blank" rel="me">Mastodon</a>
 			<a href="https://x.com/YummyOreo3" target="_blank" rel="me">Twitter</a>
-			<span>Get in touch: <a href="mailto:quinnyatesv1@gmail.com">quinnyatesv1@gmail.com</a></span>
+			<span>Get in touch: <a href="mailto:quinn@quinnyates.me">quinn@quinnyates.me</a></span>
 		</div>
 	</footer>
 </body>

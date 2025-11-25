@@ -13,102 +13,120 @@
 	<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
 	<!--Open Graph Tags-->
 	<meta property="og:site_name" content="Quinn" />
-	<meta property="og:url" content="https://quinn-is.a-good.dev" />
+	<meta property="og:url" content="https://quinnyates.me" />
 	<meta property="og:type" content="website" />
 	<!-- Style Tags -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="style.css" />
 	<script src="menu.js" defer></script>
+	<link rel="stylesheet" href="style-new.css" />
 	<!-- Other -->
 	<meta property="og:title" content="Quinn" />
-	<meta property="og:description" content="Blogs and projects by Quinn" />
-	<title>Quinn</title>
+	<meta property="og:description" content="Q³" />
+	<title>Q³</title>
 </head>
 
 <body class="homepage">
 	<nav>
-		<div class="nav-wrapper">
-			<span class="left"><a href="/">Quinn</a></span>
-			<div class="menu">
-				<span class="right"><a href="/about.html">About</a></span>
-				<span class="right"><a href="/posts">Posts</a></span>
-				<span class="right"><a href="/now.html">Now</a></span>
-			</div>
-			<a id="hamburger-button" href="#" title="menu"></a>
-		</div>
+		<a href="/"><div class="container">
+		  <div class="cube">
+		    <div class="s1"><h1>Q³</h1></div>
+		    <div class="s2"></div>
+		    <div class="s3"></div>
+		    <div class="s4"></div>
+		    <div class="s5"></div>
+		    <div class="s6"></div>
+		  </div>
+		</div></a>
+		<svg id="noice">
+		    <filter id="noise-filter">
+			<feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="4" stitchTiles="stitch"></feTurbulence>
+			<feColorMatrix type="saturate" values="0"></feColorMatrix>
+			<feComponentTransfer>
+			    <feFuncR type="linear" slope="0.49"></feFuncR>
+			    <feFuncG type="linear" slope="0.49"></feFuncG>
+			    <feFuncB type="linear" slope="0.49"></feFuncB>
+			    <feFuncA type="linear" slope="0.5"></feFuncA>
+			</feComponentTransfer>
+			<feComponentTransfer>
+			    <feFuncR type="linear" slope="2.73" intercept="-0.86"/>
+			    <feFuncG type="linear" slope="2.73" intercept="-0.86"/>
+			    <feFuncB type="linear" slope="2.73" intercept="-0.86"/>
+			</feComponentTransfer>
+		    </filter>
+		    <rect width="100%" height="100%" filter="url(#noise-filter)"></rect>
+		</svg>
 	</nav>
+	<div class="info">
+		<div class="wrapper">
+			<span class="left">No. XX</span>
+			<span class="middle">Chicago | <span id="date">November 22nd, 2025</span></span>
+			<span class="right"><a href="about.html"><i>By Quinn</i></a></span>
+		</div>
+	</div>
 	<main>
-		<section id="posts">
-			<h2>Some Posts</h2>
-			<article class="preview">
-				<h3 class="read-more"><a href="./posts/ice-activity.html">ICE Activity in Chicago</a>
-				</h3>
-				<p>A map of most of the ICE Activity in Chicago.</p>
-				<span class="read-more"><a href="./posts/ice-activity.html">Read
-						more</a></span>
-			</article>
-			<article class="preview">
-				<h3 class="read-more"><a href="./posts/muthu.html">The story of Muthu and his theories
-						of TB</a>
-				</h3>
-				<p>
-					In the 1880s, David Chrowry-Muthu left India (where he was born) to become a
-					physician in Britain. While in Britain, he opened "one of the largest and most
-					up-to-date" sanatoriums in Wells, standing atop a hill, surrounded by trees and
-					fresh air. But his sanatorium practice in Wells did not last long.
-				</p>
-				<span class="read-more"><a href="./posts/muthu.html">Read
-						more</a></span>
-			</article>
-			<article class="preview">
-				<h3 class="read-more"><a href="./posts/zenanas.html">From Britain to the Zenanas: How
-						British Physicians Treated Tuberculosis in India</a>
-				</h3>
-				<p>This is the story of why some of the first women doctors in Britain took the arduous
-					trek to India, what they did there, and how they contributed to treating
-					tuberculosis in India and our understanding of tuberculosis in India during
-					British rule.</p>
-				<span class="read-more"><a href="./posts/zenanas.html">Read
-						more</a></span>
-			</article>
-			<span class="see-more"><a href="posts">Some more posts</a></span>
+		<br>
+		<section class="full wrapper">
+			<a href="https://icemap.quinnyates.me" target="_blank"><article class="featured">
+				<p class="pre-header">Featured Article:</p>
+				<h2>ICE ACTIVITY IN CHICAGO</h2>
+				<p>ICE (or, more accurately, all federal immigration enforcement), has increased significantly as Trump took office. These agents have been wrecking havoc throughout Chicago, deploying chemical weapons without reason into densely populated areas and pulling families apart. To get a sense of the spread of their terror, I have mapped out all verified sightings I could find.</p>
+				<p class="smaller">[ICEMAP.QUINNYATES.ME]</p>
+			</article></a>
 		</section>
-		<section id="projects">
-			<h2>Some Projects</h2>
-			<article class="preview">
-				<h3 class="read-more"><a href="https://tbfighters.org" target="_blank">TBFighters
-						Website</a></h3>
-				<p><a href="https://tbfighters.org" target="_blank" class="button">Website</a></p>
-				<span class="read-more"><a href="./projects/tbfighters.html">Learn More</a></span>
-			</article>
-			<span class="see-more"><a href="projects">Some more projects</a></span>
-		</section>
-		<section id="notes">
-			<h2>Some Notes</h2>
-			<article class="preview">
-				<h3 class="read-more"><a href="./notes/stop-tb-communication-training-public.html">Stop
-						Tb Communication Traning</a></h3>
-				<p>Use EPIC to mobilize the reader. Focus on the collective solutions and systematic
-					issues. Use a shared value to hook the audience and always be detailed and
-					concreate in every step, you should almost never be vague about the issue,
-					solution, or call to action</p>
-				<span class="read-more"><a
-						href="./notes/stop-tb-communication-training-public.html">Read
-						more</a></span>
-			</article>
-			<span class="see-more"><a href="/notes/">Some more notes</a></span>
+		<section class="columns wrapper">
+			<div class="column">
+				<a href="about.html"><article>
+					<h2><i>Quinn Yates</i></h2>
+					<p>Hi! I'm a high school student that uses their coding skills to try to do good in the world. I also love to research about history! Here you can find some of my projects and posts about random thoughts that I've had or about my research.</p>
+					<p class="smaller">[Cont. on back]</p>
+				</article></a>
+				<a href="about.html#now"><article>
+					<h2>NOW</h2>
+					<p>What I'm currently working on:</p>
+					<ul>
+						<li>Making TBFighters.org (and fighting tuberculosis)</li>
+						<li>Getting through high school</li>
+						<li>Protecting immigratns</li>
+						<li>Playing Ultimate Frisbee</li>
+						<li>Writing for this blog</li>
+					</ul>
+					<p class="smaller">[Cont. on back]</p>
+				</article></a>
+			</div>
+			<div class="column">
+				<a href="posts/muthu.html"><article>
+					<h2 style="font-size: 2.5rem;">AN <span class="blue">OLD</span> DEBATE</h2>
+					<p> In the 1880s, David Chrowry-Muthu left India (where he was born) to become a physician in Britain. While in Britain, he opened "one of the largest and most up-to-date" sanatoriums in Wells, standing atop a hill, surrounded by trees and fresh air. But his sanatorium practice in Wells did not last long.</p>
+					<p class="smaller">[Cont. on page 2]</p>
+				</article></a>
+				<a href="/posts/zenanas.html"><article>
+					<h2><i>From <span class="orange">Britain</span> to the <span class="orange">Zenanas</span></i></h2>
+					<p>This is the story of why some of the first women doctors in Britain took the arduous trek to India, what they did there, and how they contributed to treating tuberculosis in India and our understanding of tuberculosis in India during British rule.</p>
+					<p class="smaller">[Cont. on page 3]</p>
+				</article></a>
+			</div>
+			<div class="column">
+				<a href="projects/tbfighters.html"><article class="featured">
+					<p class="pre-header">Featured Article:</p>
+					<h2>TBFIGHTERS</h2>
+					<p>TBFighters is a group of public health activists who fight the causes of tuberculosis.</p>
+					<p class="smaller">[Cont. on page 4]</p>
+				</article></a>
+				<a href="https://www.usatoday.com/story/opinion/voices/2025/07/08/trump-usaid-cuts-tb-test-tuberculosis-treatment/84287094007/" target="_blank"><article class="featured">
+					<p class="pre-header">Featured Article:</p>
+					<h2 style="font-size: 2rem;"><span class="not-bold">11,000 more TB patients died after Trump's USAID cuts. That number will rise.</span> </h2>
+					<p>More than 11,000 additional TB patients are estimated to have died after USAID funding freeze. If this continues, thousands more will likely die or lose a loved one, all from one shortsighted action.</p>
+					<p class="smaller">[USA Today]</p>
+				</article></a>
+			</div>
 		</section>
 	</main>
 	<footer>
 		<div class="footer-wrapper">
 			<a href="https://github.com/yummyoreo" target="_blank">Github</a>
-			<a href="https://bsky.app/profile/quinn-is.a-good.dev" target="_blank" rel="me">Blue Sky</a>
+			<a href="https://bsky.app/profile/quinnyates.me" target="_blank" rel="me">Blue Sky</a>
 			<a href="https://hachyderm.io/@YummyOreo" target="_blank" rel="me">Mastodon</a>
 			<a href="https://x.com/YummyOreo3" target="_blank" rel="me">Twitter</a>
-			<span>Get in touch: <a href="mailto:theyumoreos@gmail.com">theyumoreos@gmail.com</a></span>
+			<span>Get in touch: <a href="mailto:quinn@quinnyates.me">quinn@quinnyates.me</a></span>
 		</div>
 	</footer>
 </body>

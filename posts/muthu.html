@@ -12,15 +12,12 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
 	<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
 	<!--Open Graph Tags-->
-	<meta property="og:site_name" content="Quinn" />
-	<meta property="og:url" content="https://quinn-is.a-good.dev" />
+	<meta property="og:site_name" content="Q³" />
+	<meta property="og:url" content="https://quinnyates.me" />
 	<meta property="og:type" content="website" />
 	<!-- Style Tags -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 		rel="stylesheet" />
-	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="../style-new.css" />
 	<link rel="stylesheet" href="./muthu.css" />
 	<script src="../menu.js" defer></script>
 	<!-- Other -->
@@ -31,33 +28,53 @@
 	<meta property="og:description" content="" />
 
 	<!-- <meta property="og:image" content="https://quinn-is.a-good.dev/assets/muthu/preview.jpg" /> -->
-	<title>Muthu</title>
+	<title>An Old Debate</title>
 </head>
 
 <body class="homepage">
+
 	<nav>
-		<div class="nav-wrapper">
-			<span class="left"><a href="/">Quinn</a></span>
-			<div class="menu">
-				<span class="right"><a href="/about.html">About</a></span>
-				<span class="right"><a href="/posts">Posts</a></span>
-				<span class="right"><a href="/now.html">Now</a></span>
-			</div>
-			<a id="hamburger-button" href="#" title="menu"></a>
-		</div>
+		<a href="/"><div class="container">
+				<div class="cube">
+					<div class="s1"><h1>Q³</h1></div>
+					<div class="s2"></div>
+					<div class="s3"></div>
+					<div class="s4"></div>
+					<div class="s5"></div>
+					<div class="s6"></div>
+				</div>
+			</div></a>
+		<svg id="noice">
+		    <filter id="noise-filter">
+			<feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="4" stitchTiles="stitch"></feTurbulence>
+			<feColorMatrix type="saturate" values="0"></feColorMatrix>
+			<feComponentTransfer>
+			    <feFuncR type="linear" slope="0.49"></feFuncR>
+			    <feFuncG type="linear" slope="0.49"></feFuncG>
+			    <feFuncB type="linear" slope="0.49"></feFuncB>
+			    <feFuncA type="linear" slope="0.5"></feFuncA>
+			</feComponentTransfer>
+			<feComponentTransfer>
+			    <feFuncR type="linear" slope="2.73" intercept="-0.86"/>
+			    <feFuncG type="linear" slope="2.73" intercept="-0.86"/>
+			    <feFuncB type="linear" slope="2.73" intercept="-0.86"/>
+			</feComponentTransfer>
+		    </filter>
+		    <rect width="100%" height="100%" filter="url(#noise-filter)"></rect>
+		</svg>
 	</nav>
+	<div class="info">
+		<div class="wrapper">
+			<span class="left">No. 02</span>
+			<span class="middle">Chicago | Saturday, August 06, 2025</span>
+			<span class="right"><a href="about.html"><i>By Quinn</i></a></span>
+		</div>
+	</div>
+
 	<main>
 		<div class="wrapper">
-			<section id="header">
-				<h1 id="series">Theories of TB</h1>
-				<div class="meta">
-					<p id="number">No. 01</p>
-					<p id="date">Chicago, August 06, 2025</p>
-					<p id="cost"><i>FREE</i></p>
-				</div>
-			</section>
-			<br>
 			<section id="main">
+				<br>
 				<h2>An Old Debate</h2>
 				<div class="subheading">
 					<hr>
@@ -732,10 +749,10 @@
 	<footer>
 		<div class="footer-wrapper">
 			<a href="https://github.com/yummyoreo" target="_blank">Github</a>
-			<a href="https://bsky.app/profile/quinn-is.a-good.dev" target="_blank" rel="me">Blue Sky</a>
+			<a href="https://bsky.app/profile/quinnyates.me" target="_blank" rel="me">Blue Sky</a>
 			<a href="https://hachyderm.io/@YummyOreo" target="_blank" rel="me">Mastodon</a>
 			<a href="https://x.com/YummyOreo3" target="_blank" rel="me">Twitter</a>
-			<span>Get in touch: <a href="mailto:quinnyatesv1@gmail.com">quinnyatesv1@gmail.com</a></span>
+			<span>Get in touch: <a href="mailto:quinn@quinnyates.me">quinn@quinnyates.me</a></span>
 		</div>
 	</footer>
 </body>
