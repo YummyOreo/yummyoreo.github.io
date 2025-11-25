@@ -366,7 +366,7 @@ article .pre-header {
 
 article p {
     font-size: 1.25rem;
-    width: 95%;
+    width: 100%;
     text-align: justify;
     margin-bottom: 0;
 }
@@ -409,15 +409,19 @@ footer a {
         width: 90%;
         max-width: unset;
     }
+
     .wrapper-post {
         width: 90%;
         max-width: unset;
     }
 
+    .wrapper-img {
+        width: 90%;
+    }
+
     .full article h2 {
         font-size: 3rem;
     }
-
 
     .columns {
         gap: 0;
