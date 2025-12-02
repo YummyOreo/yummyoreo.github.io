@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--Meta tags-->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Blogs and projects by Quinn" />
+	<meta name="robots" content="index, follow" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+	<!--Open Graph Tags-->
+	<meta property="og:site_name" content="Q³" />
+	<meta property="og:url" content="https://quinnyates.me" />
+	<meta property="og:type" content="website" />
+	<!-- Style Tags -->
+	<link rel="stylesheet" href="./style-new.css" />
+	<!-- <link rel="stylesheet" href="./non-doc.css" /> -->
+	<script src="menu.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
+	<link rel="stylesheet" href="./assets/gruvbox-dark-medium.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+	<!-- and it's easy to individually load additional languages -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/go.min.js"></script> -->
+	<!-- Other -->
+	<meta property="og:title" content="About | Q³" />
+	<meta property="og:description" content="About me" />
+	<title>About | Q³</title>
+</head>
+
+<body class="homepage">
+	<nav>
+		<a href="/"><div class="container">
+		  <div class="cube">
+		    <div class="s1"><h1>Q³</h1></div>
+		    <div class="s2"></div>
+		    <div class="s3"></div>
+		    <div class="s4"></div>
+		    <div class="s5"></div>
+		    <div class="s6"></div>
+		  </div>
+		</div></a>
+		<svg id="noice">
+		    <filter id="noise-filter">
+			<feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="4" stitchTiles="stitch"></feTurbulence>
+			<feColorMatrix type="saturate" values="0"></feColorMatrix>
+			<feComponentTransfer>
+			    <feFuncR type="linear" slope="0.49"></feFuncR>
+			    <feFuncG type="linear" slope="0.49"></feFuncG>
+			    <feFuncB type="linear" slope="0.49"></feFuncB>
+			    <feFuncA type="linear" slope="0.5"></feFuncA>
+			</feComponentTransfer>
+			<feComponentTransfer>
+			    <feFuncR type="linear" slope="2.73" intercept="-0.86"/>
+			    <feFuncG type="linear" slope="2.73" intercept="-0.86"/>
+			    <feFuncB type="linear" slope="2.73" intercept="-0.86"/>
+			</feComponentTransfer>
+		    </filter>
+		    <rect width="100%" height="100%" filter="url(#noise-filter)"></rect>
+		</svg>
+	</nav>
+	<div class="info">
+		<div class="wrapper">
+			<span class="left">No. XX</span>
+			<span class="middle">Chicago | Monday, November 24, 2025</span>
+			<span class="right"><a href="/about.html"><i>By Quinn</i></a></span>
+		</div>
+	</div>
+	<main>
+		<br>
+		<section id="description">
+			<div class="wrapper-img">
+				<img src="/assets/moka.jpg" alt="My dog moka">
+				<span class="grey">My dog Moka</span>
+			</div>
+			<div class="wrapper-post">
+				<h2 style="font-size: 5rem;">Quinn</h2>
+				<p>Hi! I'm a high school student that uses their coding skills to try to do good in the world. I also love to research about history! Here you can find some of my projects and posts about random thoughts that I've had or about my research.</p>
+				<br>
+				<p>I have used my coding skills to advocate for an end to TB-the world's deadliest disease-with <a href="https://tbfighters.org" target="_blank">TBFighters</a> and to show the extent of the immigration activity within Chicago.</p>
+				<br>
+				<p>Outside of advocacy, I love to play ultimate frisbee, take pictures, and write (when I get the chance!).</p>
+			</div>
+		</section>
+		<section class="wrapper-code">
+			<pre><code class="language-javascript">let date = new Date();
+let dateEl = document.getElementById(&quot;date&quot;);
+if (dateEl) {
+	dateEl.textContent = date.toLocaleDateString(&quot;en-US&quot;, {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'});
+}</code></pre>
+		</section>
+		<br>
+		<section id="now" class="wrapper-post">
+			<h2>Now</h2>
+			<p>What I'm currently working on:</p>
+			<ul>
+				<li>Making <a href="https://tbfighters.org">TBFighters.org</a> (and fighting tuberculosis)</li>
+				<li>Getting through high school</li>
+				<li>Protecting immigrants</li>
+				<li>Playing Ultimate Frisbee</li>
+				<li>Writing for this blog</li>
+			</ul>
+		</section>
+		<br>
+		<section id="contact" class="wrapper-post">
+			<h2>Get in Touch</h2>
+			<p><b>Email</b> <a href="mailto:quinn@quinnyates.me">quinn@quinnyates.me</a></p>
+			<p><b>Bluesky</b> <a href="https://bsky.app/profile/quinnyates.me">@quinnyates.me</a></p>
+		</section>
+	</main>
+	<script>hljs.highlightAll();</script>
+	<footer>
+		<div class="footer-wrapper">
+			<a href="https://github.com/yummyoreo" target="_blank">Github</a>
+			<a href="https://bsky.app/profile/quinnyates.me" target="_blank" rel="me">Blue Sky</a>
+			<a href="https://hachyderm.io/@YummyOreo" target="_blank" rel="me">Mastodon</a>
+			<span>Get in touch: <a href="mailto:quinn@quinnyates.me">quinn@quinnyates.me</a></span>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -15,6 +15,11 @@
     --accentBlue: #0f65d1;
 }
 @font-face {
+    font-family: "FiraCode";
+    src: url('/assets/fonts/FiraCode-VF.ttf')
+}
+
+@font-face {
     font-family: "Telegraf";
     font-style: normal;
     font-weight: normal;
@@ -93,7 +98,7 @@ body {
 }
 
 .wrapper-post {
-    width: 40%;
+    width: 45%;
     max-width: 1400px;
     margin: auto;
 }
@@ -106,6 +111,18 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.wrapper-code {
+    width: 65%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.wrapper-code * {
+    font-weight: normal !important;
+    font-size: 1.25rem;
+    font-family: "FiraCode";
 }
 
 .columns {
@@ -411,6 +428,11 @@ footer a {
     }
 
     .wrapper-post {
+        width: 90%;
+        max-width: unset;
+    }
+
+    .wrapper-code {
         width: 90%;
         max-width: unset;
     }
