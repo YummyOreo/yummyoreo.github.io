@@ -421,6 +421,16 @@ footer a {
     margin-right: 0.5em;
 }
 
+/* Charts */
+.wrapper-chart {
+    width: 65%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 992px) {
     .wrapper {
         width: 90%;
@@ -433,6 +443,11 @@ footer a {
     }
 
     .wrapper-code {
+        width: 90%;
+        max-width: unset;
+    }
+
+    .wrapper-chart {
         width: 90%;
         max-width: unset;
     }
