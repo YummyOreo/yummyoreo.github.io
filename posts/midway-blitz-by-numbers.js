@@ -364,7 +364,7 @@ function graphSightingsByLocation(icemapData) {
 	legendBtm = "2%"
 	if (mobile) {
 		titleTop = 0;
-		fontSize= 12
+		fontSize = 12
 		gridBtm = "20%";
 		legendBtm = "0%"
 	}
