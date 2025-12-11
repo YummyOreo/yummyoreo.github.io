@@ -166,7 +166,10 @@ section.animated {
     padding: 0 0;
     margin: 0 0;
     width: 100%;
-    /* aspect-ratio: 300 / 197; */
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: none;
     max-height: none;
 }
 
