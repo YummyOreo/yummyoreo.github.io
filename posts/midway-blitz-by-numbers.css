@@ -157,6 +157,7 @@ section.animated {
 }
 
 .wrapper-dots {
+    background-color: var(--fg);
     width: 90%;
     max-width: 1500px;
 }
@@ -171,6 +172,22 @@ section.animated {
     height: auto;
     min-height: none;
     max-height: none;
+}
+
+.wrapper-dots .block {
+    width: 90%;
+    max-width: 1500px;
+    position: absolute;
+    margin: auto;
+}
+
+.wrapper-dots .block p {
+    width: 50%;
+    background-color: var(--fg);
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 0;
 }
 
 .phone {
@@ -242,6 +259,12 @@ section.animated {
 
     iframe {
         aspect-ratio: 3/2;
+    }
+
+    .wrapper-dots .block p {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
