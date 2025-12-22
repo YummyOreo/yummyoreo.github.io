@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: 'Telegraf';
+    font-family: 'dina';
 
     /* https://coolors.co/ee8f1b-d17b0f-3e3e33-70715c-d9dac9-fcfced */
     --bg: #fcfced;
@@ -20,66 +20,31 @@
 }
 
 @font-face {
-    font-family: "Telegraf";
+    font-family: "dina";
     font-style: normal;
     font-weight: normal;
-    src: url(/assets/fonts/PPTelegraf-Regular.otf)
+    src: url(/assets/fonts/DinaRemasterII.ttf)
 }
 
 @font-face {
-    font-family: "Telegraf";
+    font-family: "dina";
     font-style: italic;
     font-weight: normal;
-    src: url(/assets/fonts/PPTelegraf-RegularSlanted.otf)
+    src: url(/assets/fonts/DinaRemasterII-italic.ttf)
 }
 
 @font-face {
-    font-family: "Telegraf";
-    font-style: oblique;
-    font-weight: normal;
-    src: url(/assets/fonts/PPTelegraf-RegularOblique.otf)
-}
-
-@font-face {
-    font-family: "Telegraf";
+    font-family: "dina";
     font-style: normal;
     font-weight: bold;
-    src: url(/assets/fonts/PPTelegraf-Ultrabold.otf)
+    src: url(/assets/fonts/DinaRemasterII-Bold.ttf)
 }
 
 @font-face {
-    font-family: "Telegraf";
+    font-family: "dina";
     font-style: italic;
     font-weight: bold;
-    src: url(/assets/fonts/PPTelegraf-UltraboldSlanted.otf)
-}
-
-@font-face {
-    font-family: "Telegraf";
-    font-style: oblique;
-    font-weight: bold;
-    src: url(/assets/fonts/PPTelegraf-UltraboldOblique.otf)
-}
-
-@font-face {
-    font-family: "Telegraf";
-    font-style: normal;
-    font-weight: 100;
-    src: url(/assets/fonts/PPTelegraf-Ultralight.otf)
-}
-
-@font-face {
-    font-family: "Telegraf";
-    font-style: italic;
-    font-weight: 100;
-    src: url(/assets/fonts/PPTelegraf-UltralightSlanted.otf)
-}
-
-@font-face {
-    font-family: "Telegraf";
-    font-style: oblique;
-    font-weight: 100;
-    src: url(/assets/fonts/PPTelegraf-UltralightOblique.otf)
+    src: url(/assets/fonts/DinaRemasterII-Bold-italic.ttf)
 }
 
 /* General */
@@ -150,12 +115,24 @@ body {
     color: var(--accentBlue);
 }
 
+a:hover .blue {
+    text-shadow: 0px 0px 3px var(--accentBlue);
+}
+
 .orange {
     color: var(--accent);
 }
 
 .grey {
     color: var(--fg2);
+}
+
+.full.wrapper h2 {
+    text-shadow: -5px 5px var(--accent);
+}
+
+.full.wrapper a:hover h2 {
+    text-shadow: -5px 5px var(--fg), -5px 5px 5px var(--fg), 0px 0px 5px var(--accent);
 }
 
 p, li, ul {
@@ -173,7 +150,9 @@ a {
 }
 
 a:hover {
-    background-color: var(--accent-transparent);
+    /* background-color: var(--accent-transparent); */
+    color: var(--accent);
+    text-shadow: 0px 0px 3px var(--accent2);
 }
 
 hr {
@@ -194,7 +173,6 @@ h3 {
 }
 
 img {
-    border-radius: 0.2em;
     margin: 1rem 0;
     max-width: 100%;
     border: 4px solid var(--fg);
@@ -210,22 +188,23 @@ aside {
 
 .button {
     display: inline-block;
-    border-radius: 0.2em;
     padding: 0.5em 1em;
     text-decoration: none;
     background-color: var(--fg);
     border: 4px solid var(--fg);
     color: var(--bg);
     margin: 0.675rem 0;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s steps(2, jump-both);
     line-height: 1.1;
     font-weight: 700;
 }
 
 .button:hover {
-    background: var(--accent2);
+    /* background: var(--accent2); */
     color: var(--bg);
-    border-color: var(--accent2);
+    /* border-color: var(--accent2); */
+    text-shadow: none;
+    box-shadow: -5px 5px var(--accent)/* , -5px 5px 5px var(--fg), 0px 0px 5px var(--accent) */;
 }
 
 /* NAVBAR */
@@ -233,9 +212,6 @@ aside {
 nav {
     padding: 2rem 0rem;
     background: var(--fg);
-    background-blend-mode: screen;
-    background-position: top left;
-    background-size: 25%;
     color: var(--bg);
     display: flex;
     align-items: center;
@@ -265,20 +241,20 @@ a:hover:has(.cube) {
 
 nav .cube:hover div {
   outline: 5px solid var(--accent2);
+    box-shadow: 0px 0px 10px 0px var(--accent2), inset 0px 0px 10px 0px var(--accent2);
 }
 
 nav .cube:hover div h1 {
     color: var(--accent2);
+    text-shadow: 0px 0px 5px var(--accent2);
 }
 nav .cube > div {
   position: absolute;
   width: var(--cube-size);
   height: var(--cube-size);
   opacity: 0.9;
-  /*background: linear-gradient(to right, #09adc8, #001f4e);*/
   outline: 5px solid var(--bg);
   border-radius: 3px;
-
 }
 
 nav .cube div:has(h1) {
@@ -292,6 +268,8 @@ nav .cube h1 {
     text-align: center;
     color: var(--bg);
     width: var(--cube-size);
+    height: 100%;
+    align-content: center;
 }
 
 .s1 {

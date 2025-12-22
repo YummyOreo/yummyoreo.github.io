@@ -37,24 +37,6 @@
 		    <div class="s6"></div>
 		  </div>
 		</div></a>
-		<svg id="noice">
-		    <filter id="noise-filter">
-			<feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="4" stitchTiles="stitch"></feTurbulence>
-			<feColorMatrix type="saturate" values="0"></feColorMatrix>
-			<feComponentTransfer>
-			    <feFuncR type="linear" slope="0.49"></feFuncR>
-			    <feFuncG type="linear" slope="0.49"></feFuncG>
-			    <feFuncB type="linear" slope="0.49"></feFuncB>
-			    <feFuncA type="linear" slope="0.5"></feFuncA>
-			</feComponentTransfer>
-			<feComponentTransfer>
-			    <feFuncR type="linear" slope="2.73" intercept="-0.86"/>
-			    <feFuncG type="linear" slope="2.73" intercept="-0.86"/>
-			    <feFuncB type="linear" slope="2.73" intercept="-0.86"/>
-			</feComponentTransfer>
-		    </filter>
-		    <rect width="100%" height="100%" filter="url(#noise-filter)"></rect>
-		</svg>
 	</nav>
 	<div class="info">
 		<div class="wrapper">
@@ -67,7 +49,7 @@
 		<br>
 		<section id="description">
 			<div class="wrapper-img">
-				<img src="/assets/moka.jpg" alt="My dog moka">
+				<img src="/assets/moka-pixelated-3.jpg" alt="My dog moka" id="moka">
 				<span class="grey">My dog Moka</span>
 			</div>
 			<div class="wrapper-post">
@@ -84,7 +66,7 @@
 			<h2>Now</h2>
 			<p>What I'm currently working on:</p>
 			<ul>
-				<li>Making <a href="https://tbfighters.org">TBFighters.org</a> (and fighting tuberculosis)</li>
+				<li>Making <a href="https://tbfighters.org" target="_blank">TBFighters.org</a> (and fighting tuberculosis)</li>
 				<li>Getting through high school</li>
 				<li>Protecting immigrants</li>
 				<li>Playing Ultimate Frisbee</li>
@@ -95,9 +77,47 @@
 		<section id="contact" class="wrapper-post">
 			<h2>Get in Touch</h2>
 			<p><b>Email</b> <a href="mailto:quinn@quinnyates.me">quinn@quinnyates.me</a></p>
-			<p><b>Bluesky</b> <a href="https://bsky.app/profile/quinnyates.me">@quinnyates.me</a></p>
+			<p><b>Bluesky</b> <a href="https://bsky.app/profile/quinnyates.me" target="_blank">@quinnyates.me</a></p>
 		</section>
 	</main>
+	<script>
+		let pixelation = 3
+		let currentDirection = ""
+		let timeout = null
+		function transition(direction) {
+			if (direction == "pixelated") {
+				if (timeout != null && currentDirection == "regular") {
+					clearTimeout(timeout)
+				}
+				if (pixelation != 3) {
+					pixelation += 1;
+					document.getElementById("moka").src = `/assets/moka-pixelated-${pixelation}.jpg`
+					currentDirection = "pixelated"
+					timeout = setTimeout(() => {transition("pixelated")}, 500)
+				} else {
+					timeout = null
+				}
+			} else {
+				if (timeout != null && currentDirection == "pixelated") {
+					clearTimeout(timeout)
+				}
+				if (pixelation != 0) {
+					pixelation -= 1;
+					document.getElementById("moka").src = `/assets/moka-pixelated-${pixelation}.jpg`
+					currentDirection = "regular"
+					timeout = setTimeout(() => {transition("regular")}, 500)
+				} else {
+					timeout = null
+				}
+			}
+		}
+		document.getElementById("moka").addEventListener("mouseover", (event) => {
+			transition("regular")
+		})
+		document.getElementById("moka").addEventListener("mouseout", (event) => {
+			transition("pixelated")
+		})
+	</script>
 	<footer>
 		<div class="footer-wrapper">
 			<a href="https://github.com/yummyoreo" target="_blank">Github</a>
