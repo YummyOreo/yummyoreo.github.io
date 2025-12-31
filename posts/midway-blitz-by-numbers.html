@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--Meta tags-->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Blogs and projects by Quinn" />
+	<meta name="robots" content="index, follow" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico">
+	<!--Open Graph Tags-->
+	<meta property="og:site_name" content="Q³" />
+	<meta property="og:url" content="https://quinnyates.me/" />
+	<meta property="og:type" content="website" />
+	<!-- Style Tags -->
+	<link rel="stylesheet" href="../style-new.css" />
+	<link rel="stylesheet" href="./midway-blitz-by-numbers.css" />
+	<!-- <link rel="stylesheet" href="./non-doc.css" /> -->
+	<script src="../menu.js" defer></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
+	<link rel="stylesheet" href="../assets/gruvbox-dark-medium.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/echarts@6.0.0/dist/echarts.min.js"></script>
+	<script src="https://icemap.quinnyates.me/utils.js" defer></script>
+
+	<!-- gsap -->
+	<script src="../assets/gsap/gsap.min.js" defer></script>
+	<script src="../assets/gsap/ScrollTrigger.min.js" defer></script>
+
+	<script src="../assets/chart-style.js" defer></script>
+	<script src="midway-blitz-animation.js" defer></script>
+	<script src="midway-blitz-by-numbers.js" defer></script>
+	<!-- Other -->
+	<meta property="og:title" content="About | Q³" />
+	<meta property="og:description" content="About me" />
+	<title>Operation Midway Blitz by the Numbers | Q³</title>
+</head>
+
+<body class="homepage">
+	<nav>
+		<a href="/"><div class="container">
+		  <div class="cube">
+		    <div class="s1"><h1>Q³</h1></div>
+		    <div class="s2"></div>
+		    <div class="s3"></div>
+		    <div class="s4"></div>
+		    <div class="s5"></div>
+		    <div class="s6"></div>
+		  </div>
+		</div></a>
+		<svg id="noice">
+		    <filter id="noise-filter">
+			<feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="4" stitchTiles="stitch"></feTurbulence>
+			<feColorMatrix type="saturate" values="0"></feColorMatrix>
+			<feComponentTransfer>
+			    <feFuncR type="linear" slope="0.49"></feFuncR>
+			    <feFuncG type="linear" slope="0.49"></feFuncG>
+			    <feFuncB type="linear" slope="0.49"></feFuncB>
+			    <feFuncA type="linear" slope="0.5"></feFuncA>
+			</feComponentTransfer>
+			<feComponentTransfer>
+			    <feFuncR type="linear" slope="2.73" intercept="-0.86"/>
+			    <feFuncG type="linear" slope="2.73" intercept="-0.86"/>
+			    <feFuncB type="linear" slope="2.73" intercept="-0.86"/>
+			</feComponentTransfer>
+		    </filter>
+		    <rect width="100%" height="100%" filter="url(#noise-filter)"></rect>
+		</svg>
+	</nav>
+	<div class="info">
+		<div class="wrapper">
+			<span class="left">No. XX</span>
+			<span class="middle">Chicago | Monday, November 24, 2025</span>
+			<span class="right"><a href="../about.html"><i>By Quinn</i></a></span>
+		</div>
+	</div>
+	<main>
+		<section class="animated">
+			<h2>"Operation Midway Blitz" <br> by the Numbers</h2>
+			<div class="dot">
+				<!-- <img src="../assets/ice/dot.svg" alt="" id="phantomDot"> -->
+				<img src="../assets/ice/dot.svg" alt="" id="dot">
+				<p class="larger">= one person abducted</p>
+			</div>
+			<div class="wrapper-dots">
+				<img src="../assets/ice/start-end.svg" alt="" class="dots computer">
+				<img src="../assets/ice/filler.svg" alt="" class="dots filler computer">
+				<div class="block computer">
+					<p>On September 8th, the Department of Homeland Security launched "Operation Midway Blitz" in Chicago-an operation focused on imposing terror on our communities and abducting immigrants. </p>
+				</div>
+				<img src="../assets/ice/dots.svg" alt="" class="dots computer">
+				<img src="../assets/ice/dots.svg" alt="" class="dots computer">
+				<img src="../assets/ice/dots.svg" alt="" class="dots computer">
+				<div class="block computer">
+					<p style="float: right">Over 3,000 people have been abducted over the Chicagoland area. Below is an attempt to comprehend the scale of this terror</p>
+				</div>
+				<img src="../assets/ice/dots.svg" alt="" class="dots computer">
+				<img src="../assets/ice/start-end.svg" alt="" class="dots computer" style="rotate: 180deg;">
+
+				<img src="../assets/ice/start-end-phone.svg" alt="" class="dots phone">
+				<img src="../assets/ice/filler-phone.svg" alt="" class="dots filler phone">
+				<img src="../assets/ice/dots-phone.svg" alt="" class="dots phone">
+				<div class="block phone">
+					<p>On September 8th, the Department of Homeland Security launched "Operation Midway Blitz" in Chicago-an operation focused on imposing terror on our communities and abducting immigrants. </p>
+				</div>
+				<img src="../assets/ice/dots-phone.svg" alt="" class="dots phone">
+				<img src="../assets/ice/dots-phone.svg" alt="" class="dots phone">
+				<img src="../assets/ice/dots-phone.svg" alt="" class="dots phone">
+				<img src="../assets/ice/dots-phone.svg" alt="" class="dots phone">
+				<div class="block phone">
+					<p style="float: right">Over 3,000 people have been abducted over the Chicagoland area. Below is an attempt to comprehend the scale of this terror</p>
+				</div>
+				<img src="../assets/ice/dots-phone.svg" alt="" class="dots phone">
+				<img src="../assets/ice/dots-phone.svg" alt="" class="dots phone">
+				<img src="../assets/ice/start-end-phone.svg" alt="" class="dots phone" style="rotate: 180deg;">
+			</div>
+		</section>
+		<!-- <section> -->
+		<!-- 	<div class="wrapper-title"> -->
+		<!-- 		<h3>By The Numbers</h3> -->
+		<!-- 		<br> -->
+		<!-- 		<p>On September 8th, the Department of Homeland Security launched "Operation Midway Blitz" in Chicago-an operation focused on imposing terror on our communities and abducting immigrants. Over 3,000 people have been abducted over the Chicagoland area. Below is an attempt to comprehend the scale of this terror.</p> -->
+		<!-- 	</div> -->
+		<!-- </section> -->
+		<section>
+			<div class="wrapper">
+				<h3>A Chilling Effect</h3>
+				<img src="https://i0.wp.com/bcc-newspack.s3.amazonaws.com/uploads/2025/10/IMG_6641-scaled.jpg" alt="">
+				<p class="caption">Matthew Kaplan/Block Club Chicago</p>
+				<br>
+				<div class="split">
+					<div class="image">
+						<iframe src="https://icemap.quinnyates.me/embed.html?features=protests,default&lat=41.704487540031046&lng=-87.53891683139268&y=15&date=2025-10-14" frameborder="0"></iframe>
+						<p class="caption">Map of the October 14th protest and deployment of tear gas.</p>
+					</div>
+					<p class="content">On Tuesday, October 14th, in a residential neighborhood in South Chicago, federal agents deployed <a href="https://bsky.app/profile/peternickeas.bsky.social/post/3m36hm55chs2q" target="_blank">around 11 canisters</a> of tear gas into a crowd of protesters who formed after agents rammed a car. Since the start of Operation "Midway Blitz," agents deployed chemical weapons (including pepper spray) over 50 times in Chicago, largely disregarding the temporary restraining order (TRO) Judge Ellis place on October 9th restricting the use of force by agents.</p>
+				</div>
+				<br>
+				<p>
+				These deployment of tear gas and pepper spray are an attempt to instill fear into any resistance, having a chilling effect on protesters and free speech. Images of masked men in military fatigue throwing canisters of tear gas is scary for many. It makes them second guess if it is worth it for them to speak out against these deportations. It is no wonder why these agents are mostly running around in military fatigue. Its because they know it instills fear. They know it is scary and that is exactly what they want.
+			</p>
+				<iframe src="https://icemap.quinnyates.me/embed.html?features=protests&lat=41.848&lng=-87.665&y=9&focused=true" frameborder="0"></iframe>
+				<p class="caption">Map of protests invloving chemical weapons in Chicago during Operation "Midway Blitz"</p>
+				<p>These deployments have been mostly in marginalized communities, scaring any resistance to ICE's operations.</p>
+			</div>
+		</section>
+		<section>
+			<div class="wrapper">
+				<h3>Drastic Increase</h3>
+				<p>
+				As federal agents poured into Chicago, detentions and deportations drastically increased. In "Operation Midway Blitz" alone, there were over 3,000 people deported. This increase has stricken fear into many as agents roam around the city. This fear come, in part, from agents targeting <a href="https://www.cbsnews.com/chicago/news/teacher-detained-ice-rayito-del-sol-chicago-daycare-broadview/" target="_blank">day care teachers in front of kids</a>, <a target="_blank" href="https://blockclubchicago.org/2025/10/02/south-shore-residents-return-to-ransacked-apartments-try-to-move-out-after-ice-raid-it-looks-like-hell/">raiding entire apartment buildings</a>, and <a href="https://www.chicagotribune.com/2025/11/25/chicago-street-vendors-ice/" target="_blank">abducting street vendors</a> trying to stay alive. But also from the chaos they cause as they abduct people. Even after CPB commander Gregory Bovino left Chicago in November, agents are still active, although to a lesser extent.
+				</p>
+
+				<div id="detentions-by-date" class="chart" style="aspect-ratio: 9 / 6;"></div>
+				<p class="caption">Government data provided by ICE in response to a FOIA request, processed by the Deportation Data Project, and analyzed by me. ICE sighting data from <a target="_blank" href="https://icemap.quinnyates.me">ICEMap</a>.</p>
+				<p>The data from the administration only goes to the October 15th and is shown in orange. A 7 day rolling average of data is shown in blue. I have added my tracking of <a href="https://www.icirr.org/" target="_blank">ICIRR</a>-confirmed sightings in green (take the sightings with a grain of salt as agent activity isn't the only aspect that can effect those numbers).</p>
+
+				<div id="sightings-heatmap" class="chart heatmap"></div>
+				<div id="sightings-heatmap-time" class="chart heatmap"></div>
+				<p class="caption">Data from <a href="https://icemap.quinnyates.me" target="_blank">ICEMap</a>.</p>
+
+				<p>
+Most deportations seemed to happen during the work week (see heatmap above), with the exception of Monday. Deportations also happen mostly in the morning, with almost all of my recorded sightings happening before 1pm. Agents are likely targeting people going to work, contributing to our communities and paying taxes. The only notable exception to this morning pattern is when <a href="https://chicago.suntimes.com/immigration/2025/10/28/border-patrol-gregory-bovino-federal-court" target="_blank">Bovino had to testify in front of Judge Ellis on October 28th</a>. On October 28th, the majority of sightings were <em>after</em> 1pm, with the latest happening around 4:50pm.
+</p>
+				<iframe src="https://icemap.quinnyates.me/embed.html?features=&lat=41.87&lng=-87.9&y=10&heatmap=true" frameborder="0"></iframe>
+				<p class="caption">Heatmap of tracked ICE sightings in Chicago. See <a target="_blank" href="https://icemap.quinnyates.me">ICEMap</a>.</p>
+
+				<p>
+				ICE's activity has been mostly focused on already marginalized communities. Specifically Hispanic neighborhoods, such as Berwyn and Cicero, where shops are seeing a (sharp decrease in sales as people are afraid to go outside). This focus on specific communities leads to other, whiter and wealthier communities to not see the full impact of ICE's activity. While social media can greatly reduce the effect of this, giving a window into those communities and mobilizing many, it is only a window.
+				</p>
+
+				<div id="sightings-north-vs-south" class="chart" style="aspect-ratio: 9 / 6;"></div>
+				<p class="caption">Data from <a href="https://icemap.quinnyates.me" target="_blank">ICEMap</a>.</p>
+				<p>ICE seems to flip flop between north and south of North Ave, targeting a community for a couple of days straight, putting strain on the whole community before moving on to the next community.</p>
+			</div>
+		</section>
+		<section>
+			<div class="wrapper">
+				<h3>Real People</h3>
+				<p>
+				Now is a good time to remind you that behind these statistics are real people. Behind every dot is a person deported, a family in distress, friends lost, and colleagues gone.
+				</p>
+			</div>
+		</section>
+		<div class="flexable-spacer"></div>
+	</main>
+	<footer>
+		<div class="footer-wrapper">
+			<a href="https://github.com/yummyoreo" target="_blank">Github</a>
+			<a href="https://bsky.app/profile/quinnyates.me" target="_blank" rel="me">Blue Sky</a>
+			<a href="https://hachyderm.io/@YummyOreo" target="_blank" rel="me">Mastodon</a>
+			<span>Get in touch: <a href="mailto:quinn@quinnyates.me">quinn@quinnyates.me</a></span>
+		</div>
+	</footer>
+</body>
+
+</html>

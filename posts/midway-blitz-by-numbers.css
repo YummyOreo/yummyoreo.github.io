@@ -1,0 +1,270 @@
+section:has(.wrapper) {
+    background: var(--bg);
+    position: relative;
+    z-index: 10;
+}
+
+.wrapper-title {
+    width: 75%;
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+}
+
+ section .wrapper {
+    position: relative;
+    z-index: 5;
+    padding: 1rem 1rem;
+    min-width: 60%;
+    width: min-content;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+}
+
+section .wrapper > p:last-child {
+    margin-bottom: 0;
+}
+
+.spacer {
+    height: 10rem;
+}
+
+.spacer-large {
+    height: 20rem;
+}
+
+.spacer-small {
+    height: 2rem;
+}
+
+p.caption {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1rem;
+}
+
+.split {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.content {
+    width: 50%;
+}
+
+.image:not(img) {
+    width: 50%;
+}
+
+.split iframe {
+    width: 100%;
+    height: calc(100% - 2rem);
+}
+
+iframe {
+    width: 100%;
+    opacity: 0.95;
+    transition: all 0.5s ease-out;
+    aspect-ratio: 2.5/1;
+}
+
+iframe:hover {
+    opacity: 1;
+}
+
+h3 {
+    padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+section .wrapper img {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.chart {
+    margin: auto;
+    width: 900px;
+}
+
+.heatmap {
+    aspect-ratio: 90 / 26;
+}
+
+/* animation */
+
+.box {
+    width: 5rem;
+    height: 5rem;
+    background: var(--fg);
+    margin: auto;
+}
+
+section.animated {
+    background: var(--fg);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--bg);
+    overflow-x: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.animated h2 {
+    font-size: 5rem;
+    width: 60%;
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.animated .dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 15rem;
+    margin-bottom: 500px;
+    overflow-x: hidden;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.animated .dot img#phantomDot {
+    width: 100%;
+    border: none;
+}
+
+.animated .dot img#dot {
+    position: absolute;
+    width: 20rem;
+    border: none;
+}
+
+.animated .dot p {
+    position: absolute;
+    scale: 0%;
+    transform: translateX(20%);
+    margin-bottom: 0;
+}
+
+.wrapper-dots {
+    background-color: var(--fg);
+    width: 90%;
+    max-width: 1500px;
+}
+.wrapper-dots img {
+    border: none;
+    border-radius: 0;
+    padding: 0 0;
+    margin: 0 0;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: none;
+    max-height: none;
+}
+
+.wrapper-dots .block {
+    width: 90%;
+    max-width: 1500px;
+    position: absolute;
+    margin: auto;
+}
+
+.wrapper-dots .block p {
+    width: 50%;
+    background-color: var(--fg);
+    padding: 1rem 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+}
+
+.phone {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .split {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .image:not(img) {
+        width: 100%;
+    }
+
+    .phone {
+        display: block;
+    }
+    .computer {
+        display: none;
+    }
+    .wrapper-title {
+        width: 90%;
+        max-width: unset;
+    }
+
+    .animated {
+        padding-bottom: 1rem;
+    }
+
+    .animated h2 {
+        width: 99%;
+        font-size: 3rem;
+    }
+
+    .wrapper-dots img {
+        margin-bottom: 3px;
+    }
+
+    .animated .dot img#dot {
+        width: 10rem;
+    }
+
+    .animated .dot {
+        margin-top: 6rem;
+    }
+
+    .animated .dot p {
+        width: 40%;
+    }
+
+    .heatmap {
+        aspect-ratio: 3 / 2;
+    }
+
+    section .wrapper {
+        width: 90%;
+        min-width: unset;
+    }
+
+    .chart {
+        margin: auto;
+        width: 100%;
+    }
+
+    iframe {
+        aspect-ratio: 3/2;
+    }
+
+    .wrapper-dots .block p {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
