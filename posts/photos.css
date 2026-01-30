@@ -1,0 +1,44 @@
+#main {
+    overflow-x:hidden;
+}
+
+h3 {
+    margin-bottom: 0rem;
+    padding-bottom: 0;
+}
+
+.slideshow {
+    display: flex;
+    gap: 1rem;
+    flex-wrap:nowrap;
+    width: unset;
+    overflow-x:visible;
+}
+
+.slideshow-wrapper {
+    padding-bottom: 20rem;
+}
+
+.slideshow img {
+    border: none;
+    margin: 0 0;
+    width: auto;
+    max-height: 75lvh;
+    max-width: none;
+}
+
+.slideshow img:first-child {
+    margin-left: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .slideshow img {
+        height: min-content;
+        width: auto;
+        max-width: 100lvw;
+    }
+
+    .slideshow {
+        align-items: center;
+    }
+}
