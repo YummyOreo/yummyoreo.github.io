@@ -33,7 +33,7 @@ h3 {
 
 @media only screen and (max-width: 992px) {
     .slideshow img {
-        height: min-content !important;
+        max-height: min-content !important;
         width: auto !important;
         max-width: 100vw !important;
     }
