@@ -1,3 +1,5 @@
+mobile = screen.width <= 992;
+
 const rem = parseFloat(getComputedStyle(document.documentElement).fontSize);
 function registerSlideshow(id) {
 	let slideshow = document.getElementById(id);
@@ -15,12 +17,17 @@ function registerSlideshow(id) {
 	width -= rem
 	let height = count * 300
 
-	let rollingW = 0
-	let precents = []
-	for (const w of widthArray) {
-		rollingW += w + rem;
-		let precent = (rollingW - ((w + rem)/2)) / (-width);
-		precents.push(precent)
+
+	let snap = false;
+	if (!mobile) {
+		let rollingW = 0
+		let precents = []
+		for (const w of widthArray) {
+			rollingW += w + rem;
+			let precent = (rollingW - ((w + rem) / 2)) / (-width);
+			precents.push(precent)
+		}
+		snap = { snapTo: precents, delay: 0.25 }
 	}
 
 	gsap.to("#" + id, {
@@ -30,7 +37,7 @@ function registerSlideshow(id) {
 			end: "+=" + height + " top",
 			scrub: true,
 			pin: true,
-			snap: {snapTo: precents, delay: 0.25 }
+			snap: snap
 		},
 		ease: "none",
 		x: width

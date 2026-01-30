@@ -7,6 +7,21 @@ h3 {
     padding-bottom: 0;
 }
 
+.image-header {
+    background-image: url(../assets/photos/2026-01-25/8.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.image-header h2 {
+    padding-top: calc(50lvh);
+    padding-bottom: 10lvh;
+    color: var(--bg);
+    text-shadow: -5px 5px var(--fg);
+    font-size: 4rem;
+}
+
 .slideshow {
     display: flex;
     gap: 1rem;
