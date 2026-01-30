@@ -33,9 +33,9 @@ h3 {
 
 @media only screen and (max-width: 992px) {
     .slideshow img {
-        height: min-content;
-        width: auto;
-        max-width: 100lvw;
+        height: min-content !important;
+        width: auto !important;
+        max-width: 100vw !important;
     }
 
     .slideshow {
