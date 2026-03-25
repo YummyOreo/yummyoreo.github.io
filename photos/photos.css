@@ -21,6 +21,13 @@ h3 {
     background-position: center;
 }
 
+#montreal-street .image-header {
+    background-image: url(../assets/photos/montreal-street/6.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
 .image-header h2 {
     padding-top: calc(50lvh);
     padding-bottom: 10lvh;
@@ -51,6 +58,23 @@ h3 {
 
 .slideshow img:first-child {
     margin-left: 1rem;
+}
+
+.image-grid {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.image-grid .column {
+    width: 50%;
+}
+
+.image-grid img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-height: unset;
+    margin-bottom: 0.5rem;
 }
 
 @media only screen and (max-width: 992px) {
