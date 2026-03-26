@@ -60,23 +60,6 @@ h3 {
     margin-left: 1rem;
 }
 
-.image-grid {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.image-grid .column {
-    width: 50%;
-}
-
-.image-grid img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    max-height: unset;
-    margin-bottom: 0.5rem;
-}
-
 @media only screen and (max-width: 992px) {
     .slideshow img {
         max-height: min-content !important;
