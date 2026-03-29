@@ -123,6 +123,13 @@ body {
     gap: 0.5rem;
 }
 
+.image-grid .column div p {
+    font-weight: 100;
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+    margin-top: 0;
+}
+
 .image-grid .column {
     width: 50%;
 }

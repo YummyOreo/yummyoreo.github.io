@@ -60,7 +60,21 @@ h3 {
     margin-left: 1rem;
 }
 
+#portfolio img {
+    margin-bottom: 0;
+}
+
 @media only screen and (max-width: 992px) {
+    .image-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .image-grid .column {
+        width: 100%;
+    }
+
     .slideshow img {
         max-height: min-content !important;
         width: auto !important;
