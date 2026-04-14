@@ -36,7 +36,7 @@
 		<br>
 		<section id="description">
 			<div class="wrapper-img">
-				<img src="/assets/moka-pixelated-3.jpg" alt="My dog moka" id="moka">
+				<img src="/assets/moka-pixelated-0.jpg" alt="My dog moka">
 				<span class="grey">My dog Moka</span>
 			</div>
 			<div class="wrapper-post">
@@ -55,6 +55,7 @@
 			<ul>
 				<li>Making <a href="https://tbfighters.org" target="_blank">TBFighters.org</a> (and fighting tuberculosis)</li>
 				<li>Getting through high school</li>
+				<li>Taking photos</li>
 				<li>Protecting immigrants</li>
 				<li>Playing Ultimate Frisbee</li>
 				<li>Writing for this blog</li>
@@ -67,44 +68,6 @@
 			<p><b>Bluesky</b> <a href="https://bsky.app/profile/quinnyates.me" target="_blank">@quinnyates.me</a></p>
 		</section>
 	</main>
-	<script>
-		let pixelation = 3
-		let currentDirection = ""
-		let timeout = null
-		function transition(direction) {
-			if (direction == "pixelated") {
-				if (timeout != null && currentDirection == "regular") {
-					clearTimeout(timeout)
-				}
-				if (pixelation != 3) {
-					pixelation += 1;
-					document.getElementById("moka").src = `/assets/moka-pixelated-${pixelation}.jpg`
-					currentDirection = "pixelated"
-					timeout = setTimeout(() => {transition("pixelated")}, 500)
-				} else {
-					timeout = null
-				}
-			} else {
-				if (timeout != null && currentDirection == "pixelated") {
-					clearTimeout(timeout)
-				}
-				if (pixelation != 0) {
-					pixelation -= 1;
-					document.getElementById("moka").src = `/assets/moka-pixelated-${pixelation}.jpg`
-					currentDirection = "regular"
-					timeout = setTimeout(() => {transition("regular")}, 500)
-				} else {
-					timeout = null
-				}
-			}
-		}
-		document.getElementById("moka").addEventListener("mouseover", (event) => {
-			transition("regular")
-		})
-		document.getElementById("moka").addEventListener("mouseout", (event) => {
-			transition("pixelated")
-		})
-	</script>
 	<footer>
 		<div class="footer-wrapper">
 			<a href="https://github.com/yummyoreo" target="_blank">Github</a>
