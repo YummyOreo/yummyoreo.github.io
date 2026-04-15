@@ -3,5 +3,6 @@ mkShell {
     buildInputs = [
         nodejs
         live-server
+        ripgrep
     ];
 }
