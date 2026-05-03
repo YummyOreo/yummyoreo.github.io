@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: 'kyoto';
+    font-family: 'Atkinson';
 
     /* https://coolors.co/ee8f1b-d17b0f-3e3e33-70715c-d9dac9-fcfced */
     --bg: #fcfced;
@@ -10,41 +10,19 @@
     --fg2: #575848;
 
     --accent: #d17b0f;
-    --accent-transparent: rgba(238, 143, 27, 0.5);
     --accent2: #ee8f1b;
-    --accentBlue: #0f65d1;
-}
-@font-face {
-    font-family: "FiraCode";
-    src: url('/assets/fonts/FiraCode-VF.ttf')
 }
 
 @font-face {
-    font-family: "kyoto";
+    font-family: "Atkinson";
     font-style: normal;
-    font-weight: normal;
-    src: url(/assets/fonts/PPKyotoMedium.otf)
+    src: url(/assets/fonts/AtkinsonHyperlegibleNext-VariableFont_wght.ttf)
 }
 
 @font-face {
-    font-family: "kyoto";
+    font-family: "Atkinson";
     font-style: italic;
-    font-weight: normal;
-    src: url(/assets/fonts/PPKyoto-MediumItalic.otf)
-}
-
-@font-face {
-    font-family: "kyoto";
-    font-style: normal;
-    font-weight: bold;
-    src: url(/assets/fonts/PPKyoto-Extrabold.otf)
-}
-
-@font-face {
-    font-family: "kyoto";
-    font-style: italic;
-    font-weight: bold;
-    src: url(/assets/fonts/PPKyoto-ExtraboldItalic.otf)
+    src: url(/assets/fonts/AtkinsonHyperlegibleNext-Italic-VariableFont_wght.ttf)
 }
 
 /* General */
@@ -114,10 +92,6 @@ body {
     gap: 2rem;
 }
 
-.images img {
-    transition: all ease-in-out 0.5s;
-}
-
 .image-grid {
     display: flex;
     gap: 0.5rem;
@@ -125,8 +99,8 @@ body {
 
 .image-grid .column div p {
     font-weight: 100;
-    font-size: 0.75rem;
-    line-height: 0.75rem;
+    font-size: 0.85rem;
+    line-height: 0.85rem;
     margin-top: 0;
 }
 
@@ -142,6 +116,15 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.get-in-touch {
+    text-align: center;
+}
+
+.get-in-touch p {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
 .smaller {
     font-size: 1rem;
     font-weight: 100;
@@ -153,10 +136,6 @@ body {
 
 .blue {
     color: var(--accentBlue);
-}
-
-a:hover .blue {
-    text-shadow: 0px 0px 3px var(--accentBlue);
 }
 
 .orange {
@@ -190,9 +169,7 @@ a {
 }
 
 a:hover {
-    /* background-color: var(--accent-transparent); */
     color: var(--accent);
-    text-shadow: 0px 0px 3px var(--accent2);
 }
 
 hr {
@@ -230,18 +207,20 @@ aside {
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background-color: var(--fg);
-    border: 4px solid var(--fg);
+    background-color: var(--accent);
+    border: 4px solid var(--accent);
     color: var(--bg);
     margin: 0.675rem 0;
     line-height: 1.1;
     font-weight: 700;
+    transition: all 0.2s ease;
 }
 
 .button:hover {
     color: var(--bg);
     text-shadow: none;
-    box-shadow: -5px 5px var(--accent)/* , -5px 5px 5px var(--fg), 0px 0px 5px var(--accent) */;
+    background-color: var(--fg);
+    border: 4px solid var(--fg);
 }
 
 /* NAVBAR */
@@ -256,7 +235,7 @@ nav {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 nav ul {
@@ -301,10 +280,6 @@ a:has(article) {
     text-decoration: none !important;
     border: 3px solid var(--fg);
     padding: 1rem;
-}
-
-a:hover {
-    border-color: var(--accent);
 }
 
 .bento-box {
