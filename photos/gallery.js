@@ -9,11 +9,11 @@ function render(gallery) {
     let initialX = container.getBoundingClientRect().left;
     let initialY = container.getBoundingClientRect().top + window.scrollY;
     let width = container.getBoundingClientRect().width;
-    let colNumber = 3
-    if (width < 700) {
+    let colNumber = 2
+    if (width < 768) {
         colNumber = 2
     }
-    if (width < 500) {
+    if (width < 650) {
         colNumber = 1
     }
     let maxImageWidth = (width - (3 * colNumber)) / colNumber;
@@ -70,11 +70,13 @@ function render(gallery) {
 
 export function renderGallery(gallery) {
     let container = gallery.container;
+let last = undefined
     if (container.children.length == 0) {
         let images = gallery.images;
         for (const image of images) {
             const el = document.createElement("img");
             el.setAttribute("src", image.src);
+	    last = el
             let caption = document.createElement("p");
             let cont = document.createElement("div");
             cont.setAttribute("id", image.uid);
@@ -85,7 +87,7 @@ export function renderGallery(gallery) {
             cont.appendChild(caption);
             container.appendChild(cont);
         }
-        window.addEventListener("load", () => {
+        last.addEventListener("load", () => {
             render(gallery)
         })
     } else {
