@@ -10,10 +10,10 @@ function render(gallery) {
     let initialY = container.getBoundingClientRect().top + window.scrollY;
     let width = container.getBoundingClientRect().width;
     let colNumber = 3
-    if (width < 500) {
+    if (width < 700) {
         colNumber = 2
     }
-    if (width < 300) {
+    if (width < 500) {
         colNumber = 1
     }
     let maxImageWidth = (width - (3 * colNumber)) / colNumber;
