@@ -285,6 +285,9 @@ a:has(article) {
     border: 3px solid var(--fg);
     padding: 1rem;
 }
+a:has(article):hover {
+    border-color: var(--accent);
+}
 
 .bento-box {
   display: grid;

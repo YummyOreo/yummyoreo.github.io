@@ -26,8 +26,8 @@ let photos = [
 	importPhoto("../assets/photos/portfolio/sports/2.jpg", "Juex Urbains BMX event in Montreal, Canada. March 21, 2026."),
 
 	// other
-	importPhoto("../assets/photos/portfolio/msc/1.jpg", "Winter Pearson, TBFighter attending Tuberculosis Hill Day on March 3, 2026."),
 	importPhoto("../assets/photos/portfolio/msc/2.jpg", "Memorial of Renee Good in Minneapolis, Minnesota, on March 28, 2026."),
+	importPhoto("../assets/photos/portfolio/msc/1.jpg", "Winter Pearson, TBFighter attending Tuberculosis Hill Day on March 3, 2026."),
 	importPhoto("../assets/photos/portfolio/msc/3.jpg", "Parking lot in Montreal, Canada, on March 20, 2026."),
 ]
 
