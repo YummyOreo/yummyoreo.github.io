@@ -165,6 +165,12 @@ body {
     font-size: 3rem;
     line-height: 3rem;
     text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.byline {
+    font-weight: lighter;
+    text-align: center;
 }
 
 .header .wrapper {
@@ -415,6 +421,7 @@ footer a {
         flex-direction: column;
         height: unset;
         gap: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .header img {
@@ -426,6 +433,17 @@ footer a {
         font-size: 2.5rem;
         line-height: 2.5rem;
         margin-bottom: 0.3rem;
+        text-align: left;
+    }
+
+    .byline {
+        margin-top: 0.3rem;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    #main {
+        margin-top: 1.5rem;
     }
 
     .header .header-inner {
