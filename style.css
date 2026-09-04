@@ -620,4 +620,12 @@ footer a {
         flex-direction: column;
         gap: 0rem;
     }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home a {
+        width: 100%;
+    }
 }
